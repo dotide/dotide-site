@@ -2,5 +2,120 @@
 title: 首页
 ---
 
+.carousel.brand.slide.brand#carousel-brand{:"data-ride" => "carousel"}
+  .carousel-inner
+    .item.active
+      .bg-slide
+        = image_tag("slide1-full.jpg")
+      .item-desc
+        .container
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %h2= "Dotide"
+          %p= "专注提供时序数据与解决方案"
+          %br
+          %a.btn.btn-primary{:href => "#"}
+            = "了解更多"
+          %a.btn.btn-default{:href => "#"}
+            = "了解价格"
+  %a.left.carousel-control{:href => "#carousel-brand", :"data-slide" => "prev"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{:href => "#carousel-brand", :"data-slide" => "next"}
+    %span.glyphicon.glyphicon-chevron-right
+.grayBox
+  .container
+    .row
+      .col-lg-4
+        .moreInfo
+          %span
+            %i.fa.fa-mobile
+          %h5
+            = "如何支持复合查询"
+          %p
+            = "时序数据应用开发通常都会遇到针对特定时间段、多种数据的复合查询。要求系 统能够按时间间隔分时间段快速返回“平均值、最大值、最小值、加和、数据点 个数”等特征值"
+          %p
+            = "要做到针对时序数据的有性能保障的复合查询，均需要对“时序数据存取的开发”“时序数据底层的搭建”，做出特别的处理和设计"
+      .col-lg-4
+        .moreInfo
+          %span
+            %i.fa.fa-cloud
+          %h5
+            = "如何确保存储安全 "
+          %p
+            = "时序数据的应用场景下，虽然没有大量的富媒体数据，但每一个微小的数据点都具有能影响分析的内在含义，这些微小的数据点信息，是时序数据应用的宝贵财富，不得遗失，不得泄露"
+          %p
+            = "因此不仅需要确保时序数据的稳定存储，还需要做到多重备份、分布存储,加密传输，并针对不同的人员做好查阅权限的控制"
+      .col-lg-4
+        .moreInfo
+          %span
+            %i.fa.fa-desktop
+          %h5
+            = "如何提升开发效率"
+          %p
+            = "由于时序数据应用需要做到对每一个数据点的精准掌握，才能实现时序数据的有效分析，在后端开发中如何对时序数据进行管理和使用提出了比较高的要求"
+          %p
+            = "但是反复编写时序结构和底层逻辑，将耗费开发者大量写代码的时间和反复测试精力，需要对时序数据的底层结构进行模块化处理，需要提供标准化的API结构来提高开发效率"
+.desc.carousel.slide.brand#carousel-desc{:"data-ride" => "carousel"}
+  .carousel-inner
+    .item.active
+      .container
+        %h3= "为什么选择 Dotide"
+        .row
+          .col-lg-6
+            %br
+            %h4
+              = "免费实验"
+            %p
+              = "Dotide 提供 50 条数据流，1 万个数据点的免费使用量，支持企 业和开发者进行产品研发、接口调试、场景测试等使用，Dotide 是企业和开发 者时序数据应用开发的免费实验平台"
+          .col-lg-6
+            = image_tag("photo3.png")
+    .item
+      .container
+        .row
+          .col-lg-6
+          .col-lg-6
+            %br
+            %h4
+              = "弹性购买"
+            %p
+              = "Dotide 支持企业和开发者进行弹性购买，根据数据需求量的变化 随时调整购买容量，帮助企业和开发者最小化开发成本，并将购买时间单位调整 为按月购买，确保灵活的购买弹性"
+    .item
+      .container
+        .row
+          .col-lg-6
+            %br
+            %h4
+              = "个性化服务"
+            %p
+              = "针对不同行业领域、不同应用场景的开发需求，Dotide 为企业 和开发者提供个性化的技术支持和解决方案，实现开发需求与 Dotide 时序数据 服务平台无缝对接的同时，亦可提供独立的时序数据存取系统的开发、搭建和长期运维服务"
+          .col-lg-6
+            = image_tag("photo3.png")
+    .item
+      .container
+        .row
+          .col-lg-6
+          .col-lg-6
+            %br
+            %h4
+              = "完美解决四大难题"
+            %p
+              %strong= "免费实验:"
+              = "Dotide 提供 50 条数据流，1 万个数据点的免费使用量，支持企 业和开发者进行产品研发、接口调试、场景测试等使用，Dotide 是企业和开发 者时序数据应用开发的免费实验平台"
+  %a.left.carousel-control{:href => "#carousel-desc", :"data-slide" => "prev"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{:href => "#carousel-desc", :"data-slide" => "next"}
+    %span.glyphicon.glyphicon-chevron-right
+.blackBg
+  .container
+    .row
+      .col-lg-12
+        %h3.pull-left= "免费计划，体验套餐，定制方案"
+        %a.btn.btn-primary.btn-small{:href => "#"}= "了解详情"
+
 - content_for :stylesheets do
   = stylesheet_link_tag "index"

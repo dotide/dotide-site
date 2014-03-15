@@ -1,0 +1,29 @@
+.footer{
+  padding-top: 56px;
+  padding-bottom: 56px;
+  a{
+    color: black;
+    &:hover{
+      color: $primary;
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      border-bottom: solid 1px $gray-border;
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+  .news span{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: $gray-text;
+  }
+  .headerFooter{
+    margin-bottom: 30px;
+  }
+}

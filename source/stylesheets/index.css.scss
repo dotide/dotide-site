@@ -1,0 +1,68 @@
+@import "variables";
+
+.brand.carousel{
+  .container{
+    height: 410px;
+  }
+  .btn-primary{
+    margin-right: 20px;
+  }
+  .btn-default{
+    background: transparent;
+    color: $gray-btn;
+    border: solid 2px $gray-btn;
+    &:hover{
+      color: $gray-text;
+      border-color: $gray-text;
+    }
+  }
+  .item-desc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .carousel-control{
+    width: 1%;
+  }
+}
+.grayBox{
+  background: $gray-bg;
+  .moreInfo{
+    margin: 56px 0 56px 0;
+    > * {
+      margin-left: 56px;
+    }
+    p{
+      color: $gray-text;
+      font-weight: bold;
+    }
+    span{
+      margin-left: 0;
+      float: left;
+      i{
+        font-size: 30px;
+      }
+    }
+  }
+}
+.desc.carousel{
+  .container{
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+}
+.blackBg{
+  background-color: black;
+  .container{
+    padding-top: 56px;
+    padding-bottom: 56px;
+    h3{
+      margin: 0 40px 0 0;
+      color: white;
+      font-weight: bold;
+      line-height: 33px;
+    }
+  }
+}
