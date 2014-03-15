@@ -22,10 +22,11 @@
   = yield_content :stylesheets
   = yield_content :head
 %body
+  = partial "nav"
   / Main page container
   = yield
   / Footer
-  %footer.footer
+  = partial "footer"
   /[if lt IE 9]
     #ie-warning-overlay
       #ie-warning
