@@ -28,14 +28,17 @@
   }
   .blackBg{
     background-color: black;
+    a{
+      color: white;
+    }
     .container{
       padding-top: 56px;
       padding-bottom: 56px;
       h3{
         margin: 0 40px 0 0;
         color: white;
-        font-weight: bold;
         line-height: 33px;
+        font-weight: normal;
       }
     }
   }
