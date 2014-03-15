@@ -20,9 +20,6 @@
   %title= data.page.title || "Dotide"
   = stylesheet_link_tag "application"
   = yield_content :stylesheets
-  - if content_for? :styles
-    :css
-      #{yield_content :styles}
   = yield_content :head
 %body
   / Main page container
