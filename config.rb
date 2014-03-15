@@ -1,3 +1,10 @@
+activate :sprockets
+ready do
+  sprockets.append_path(File.join(root, 'vendor/assets/javascripts'))
+  sprockets.append_path(File.join(root, 'vendor/assets/stylesheets'))
+  sprockets.append_path(File.join(root, 'vendor/assets/components'))
+end
+
 ###
 # Compass
 ###
