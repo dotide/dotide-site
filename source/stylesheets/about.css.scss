@@ -1,0 +1,28 @@
+@import "variables";
+
+.titleBox{
+  background-image: url(/images/bckgr.jpg);
+  padding-top: 56px;
+  padding-bottom: 56px;
+  .btn{
+    margin-top: 30px;
+  }
+}
+.whiteBox{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  i{
+    font-size: 25px;
+  }
+}
+.contactBox{
+  padding-top: 56px;
+  padding-bottom: 56px;
+  p{
+    color: $gray-text;
+    margin-bottom: 3px;
+  }
+}
+#map-canvas{
+  height: 400px;
+}

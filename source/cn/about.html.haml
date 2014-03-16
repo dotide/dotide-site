@@ -1,5 +1,78 @@
 ---
 title: 关于
 ---
+
+.titleBox
+  .container
+    .row
+      .col-lg-9
+        %h3= "Get in touch with us"
+        %p= "At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific, where all the mail-steamers, and those carrying travellers"
+      .col-lg-3
+        %a.btn.btn-default.pull-right{:href => "#"}= "了解更多"
+.whiteBox
+  .container
+    .row
+      .col-lg-10
+        %h5
+          %span
+            = "Contact"
+      .col-lg-2
+        .homeSign.pull-right
+          %a.reverse{:href => "/"}
+            %i.fa.fa-home
+.map
+  #map-canvas
+.contactBox
+  .container
+    .row
+      .col-lg-3
+        %h5.headerSmall
+          %span
+            %i.fa.fa-home
+            = "VISIT US"
+        %p
+          %strong= "INVISION Inc."
+          %br
+          = "2133 Stanton Hollow Road"
+          %br
+          = "Acton, MA 01720"
+          %br
+          %br
+        %h5.headerSmall
+          %span
+            %i.fa.fa-home
+            = "CONTACT"
+        %p
+          = "Phone: 781-524-8782"
+          %br
+          = "Fax: 781-542-7676"
+          %br
+          %br
+          %span
+            %a.reverse{:href => "mailto:contact@invision.co"}= "contact@invision.com"
+      .col-lg-1
+      .col-lg-8
+        %form.form-horizontal{role: "form"}
+          .row
+            .col-lg-6
+              .form-group.has-feedback
+                %input.form-control{type: "text", placeholder: "Your name"}
+                %span.form-control-feedback.fa.fa-user
+            .col-lg-6
+              .form-group.has-feedback
+                %input.form-control{type: "text", placeholder: "Your email"}
+                %span.form-control-feedback.fa.fa-envelope
+          .row
+            .col-lg-12
+              .form-group.has-feedback
+                %textarea.form-control{placeholder: "Your email"}
+                %span.form-control-feedback.fa.fa-pencil
+          .row
+            %input.btn.btn-primary.btn-lg{type: "submit", value: "Send"}
+%script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Mp7cWzjLYtiH9BzZhnRZtlL5RRO4V0A&sensor=true", type: "text/javascript"}
+
 - content_for :stylesheets do
   = stylesheet_link_tag "about"
+
+%script{src: "/javascripts/map.js", type: "text/javascript"}
