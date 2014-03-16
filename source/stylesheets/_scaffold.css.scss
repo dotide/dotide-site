@@ -40,6 +40,10 @@ body{
     padding: 8px 25px 8px 25px;
     background: transparent;
   }
+  .btn.btn-black{
+    background-color: black;
+    color: white;
+  }
 }
 input.form-control, textarea.form-control{
   border: solid 2px $gray-light-border;

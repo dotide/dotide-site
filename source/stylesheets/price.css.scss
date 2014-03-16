@@ -1,0 +1,68 @@
+@import "variables";
+
+.carousel{
+  background-color: $gray-bg;
+  .container{
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+  .carousel-control{
+    width: 1%;
+  }
+}
+.priceTable{
+  padding-top: 56px;
+  padding-bottom: 56px;
+  span{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    font-size: 12px;
+    color: black;
+  }
+  .emphasis{
+    color: $primary;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .emphasis-2{
+    i{
+      padding-left: 15px;
+      font-size: 12px;
+    }
+  }
+  .pricePlan{
+    background-color: black;
+    display: block;
+    padding-top: 10px;
+    color: $primary;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  hr{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .priceBox{
+    border: solid 1px $gray-border;
+    width: 33.4%;
+    display: block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: -1px;
+    &.spec{
+      margin-top: -10px;
+      .pricePlan{
+        padding-bottom: 20px;
+        display: block;
+        background-color: $primary;
+        color: white;
+      }
+      .emphasis-2{
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
