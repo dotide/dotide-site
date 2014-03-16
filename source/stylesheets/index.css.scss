@@ -49,6 +49,25 @@
       }
     }
   }
+  .details{
+    display: none;
+    span{
+      width: 100%;
+      text-align: right;
+      color: $primary;
+      &:hover{
+        color: $primary-hover;
+      }
+    }
+  }
+  .readMoreBtn{
+    font-size: 20px;
+    cursor: default;
+    color: $primary;
+    &:hover{
+      color: $primary-hover;
+    }
+  }
 }
 .desc{
   h3{
