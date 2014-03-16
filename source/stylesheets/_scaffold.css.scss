@@ -38,6 +38,7 @@ body{
   .btn.btn-default{
     color: $gray-text;
     padding: 8px 25px 8px 25px;
+    background: transparent;
   }
 }
 input.form-control, textarea.form-control{
