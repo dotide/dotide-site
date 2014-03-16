@@ -9,10 +9,14 @@
   }
 }
 .whiteBox{
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   i{
     font-size: 25px;
+  }
+  h5 span{
+    border-bottom: solid 3px $primary;
+    padding: 0 10px 20px 10px;
   }
 }
 .contactBox{
@@ -26,6 +30,6 @@
     font-size: 22px;
   }
 }
-#map-canvas{
-  height: 400px;
+.map img{
+  width: 100%;
 }
