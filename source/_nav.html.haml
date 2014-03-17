@@ -1,7 +1,7 @@
 .nav
   %nav.navbar.navbar-default{role: "navigation"}
     .container
-      .top-nav
+      .top-nav.hidden-xs
         .navbar-header
           %a.navbar-brand{:href => "#"}= "Dotide"
         %ul.nav.navbar-nav.navbar-right
@@ -17,4 +17,20 @@
             %a{:href => "/cn/about.html"}= "关于"
           %li
             %a{:href => "#"}= "进入控制台"
-      .icons-nav
+      .top-tab.visible-xs
+        .navbar-header
+          %span.navbar-brand.fa.fa-bars
+        .navbar-nav
+          %ul
+            %li
+              %a{:href => "/"}= "首页"
+            %li
+              %a{:href => "#"}= "开发文档"
+            %li
+              %a{:href => "#"}= "博客"
+            %li
+              %a{:href => "/cn/price.html"}= "定价"
+            %li
+              %a{:href => "/cn/about.html"}= "关于"
+            %li
+              %a{:href => "#"}= "进入控制台"
