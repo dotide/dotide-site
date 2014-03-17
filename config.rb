@@ -1,5 +1,5 @@
 activate :sprockets
-ready do
+after_configuration do
   sprockets.append_path(File.join(root, 'vendor/assets/javascripts'))
   sprockets.append_path(File.join(root, 'vendor/assets/stylesheets'))
   sprockets.append_path(File.join(root, 'vendor/assets/components'))
@@ -43,7 +43,7 @@ end
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -68,13 +68,18 @@ set :haml, { ugly: true }
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
+
+  # Compressing Images
+  activate :imageoptim do |options|
+    options.pngout_options = false
+  end
 
   # Use relative URLs
   # activate :relative_assets

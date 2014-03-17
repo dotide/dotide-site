@@ -1,7 +1,5 @@
-@import "variables";
-
 .titleBox{
-  background-image: url(/images/bckgr.jpg);
+  background-image: image-url('bckgr.jpg');
   padding-top: 56px;
   padding-bottom: 56px;
   .btn{
