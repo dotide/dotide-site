@@ -77,8 +77,11 @@
     margin-top: 56px;
     margin-bottom: 56px;
   }
-  img{
-    width: 50%;
+  .col-lg-6{
+    img{
+      width: 50%;
+    }
+    text-align: center;
   }
   .gray-desc{
     background-color: $gray-bg;
