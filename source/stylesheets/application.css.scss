@@ -1,5 +1,11 @@
 @import "variables";
+@import "bootstrap";
+
 @import "scaffold";
-@import "vendor";
 @import "footer";
 @import "nav";
+
+// pages
+@import "index";
+@import "about";
+@import "price";
