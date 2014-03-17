@@ -1,17 +1,7 @@
-body .btn{
-  border: solid 2px $primary-hover;
-  padding-left: 15px;
-  padding-right: 15px;
-  &.btn-primary{
-    background-color: $primary;
-    border: solid 2px $primary;
-    &:hover{
-      background-color: $primary-hover;
-      border: solid 2px $primary-hover;
-    }
-  }
-}
 body{
+  img{
+    width: 100%;
+  }
   a{
     color: $primary;
     &:hover{
@@ -37,9 +27,20 @@ body{
     color: black;
     font-size: 18px;
   }
+  .btn{
+    border: solid 2px $primary-hover;
+    padding: 8px 25px 8px 25px;
+  }
+  .btn.btn-primary{
+    background-color: $primary;
+    border: solid 2px $primary;
+    &:hover{
+      background-color: $primary-hover;
+      border: solid 2px $primary-hover;
+    }
+  }
   .btn.btn-default{
     color: $gray-text;
-    padding: 8px 25px 8px 25px;
     background: transparent;
   }
   .btn.btn-black{
