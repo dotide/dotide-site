@@ -21,8 +21,10 @@ title: 关于
         .homeSign.pull-right
           %a.reverse{:href => "/"}
             %i.fa.fa-home
-.map
+.map.hidden-xs
   = image_tag("/images/location.png")
+.map.visible-xs
+  = image_tag("/images/smallLocation.png")
 .contactBox
   .container
     .row
