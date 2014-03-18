@@ -1,7 +1,7 @@
 .brand{
   position: relative;
   .bg-slide{
-    background: url(/images/bg-slider1.jpg) no-repeat top center;
+    background: image-url('bg-slider1.jpg') no-repeat top center;
     z-index: -1;
     text-align: center;
     img{

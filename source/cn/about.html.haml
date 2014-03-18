@@ -65,8 +65,12 @@ title: 关于
                 %span.form-control-feedback.fa.fa-envelope
           .row
             .col-lg-12
-              .form-group.has-feedback
+              .form-group.has-feedback.hidden-xs
                 %textarea.form-control{placeholder: "Your email"}
                 %span.form-control-feedback.fa.fa-pencil
+              .form-group.has-feedback.visible-xs
+                %textarea.form-control{placeholder: "Your email"}
+                %span.form-control-feedback.fa.fa-pencil
+
           .row
             %input.btn.btn-primary.btn-lg{type: "submit", value: "Send"}
