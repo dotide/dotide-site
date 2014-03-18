@@ -1,10 +1,5 @@
 .footer{
   padding-bottom: 56px;
-  .blackBg{
-    h3{
-      text-align: center;
-    }
-  }
   a{
     color: black;
     &:hover{
@@ -38,8 +33,16 @@
     .container{
       padding-top: 56px;
       padding-bottom: 56px;
-      h3{
-        margin: 0 40px 0 0;
+      .details-btn-small{
+        text-align: center;
+        margin-top: 10px;
+        .btn{
+          padding: 6px 10px 6px 10px;
+        }
+      }
+      h4{
+        text-align: center;
+        margin: 0;
         color: white;
         line-height: 33px;
         font-weight: normal;
