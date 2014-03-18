@@ -5,11 +5,19 @@ title: 首页
 .brand
   .bg-slide
     = image_tag("slide1-full.jpg")
-  .item-desc
+  .item-desc.hidden-xs
     .container
       %h2= "Dotide"
       %p= "专注提供时序数据与解决方案"
       %br
+      %a.btn.btn-primary{:href => "#"}
+        = "了解更多"
+      %a.btn.btn-default{:href => "/cn/price.html"}
+        = "了解价格"
+  .item-desc-small.visible-xs
+    .container
+      %h2= "Dotide"
+      %p= "专注提供时序数据与解决方案"
       %a.btn.btn-primary{:href => "#"}
         = "了解更多"
       %a.btn.btn-default{:href => "/cn/price.html"}
