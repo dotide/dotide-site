@@ -129,11 +129,11 @@ title: 首页
   :javascript
     $(document).ready(function() {
       $('.readMore').click(function(){
-        $(this).hide();
-        $(this).siblings('.details').show();
+        $('.readMore').hide();
+        $('.details').show();
         });
       $('.hideBtn').click(function(){
-        $(this).parent('.details').hide();
-        $(this).parent('.details').siblings('.readMore').show();
+        $('.details').hide();
+        $('.readMore').show();
         })
     });
