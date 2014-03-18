@@ -9,7 +9,7 @@ body{
       text-decoration: none;
     }
   }
-  a.reverse, span.reverse{
+  a.reverse, span.reverse, li.reverse{
     color: $primary-hover;
     &:hover{
       color: $primary;
