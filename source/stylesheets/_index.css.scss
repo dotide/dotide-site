@@ -85,3 +85,27 @@
     padding-bottom: 56px;
   }
 }
+.blackBg{
+  background-color: black;
+  a{
+    color: white;
+  }
+  .container{
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .details-btn-small{
+      text-align: center;
+      margin-top: 10px;
+      .btn{
+        padding: 6px 10px 6px 10px;
+      }
+    }
+    h4{
+      text-align: center;
+      margin: 0;
+      color: white;
+      line-height: 33px;
+      font-weight: normal;
+    }
+  }
+}

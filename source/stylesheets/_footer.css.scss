@@ -1,10 +1,15 @@
 .footer{
-  padding-bottom: 56px;
+  padding-bottom: 30px;
+  border-top: solid 1px $gray-border;
+  background-color: $gray-bg;
   a{
     color: black;
     &:hover{
       color: $primary;
     }
+  }
+  .col-lg-4{
+    margin-bottom: 25px;
   }
   ul{
     list-style: none;
@@ -23,33 +28,16 @@
     color: $gray-text;
   }
   .headerFooter{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
-  .blackBg{
-    background-color: black;
-    a{
-      color: white;
-    }
-    .container{
-      padding-top: 56px;
-      padding-bottom: 56px;
-      .details-btn-small{
-        text-align: center;
-        margin-top: 10px;
-        .btn{
-          padding: 6px 10px 6px 10px;
-        }
-      }
-      h4{
-        text-align: center;
-        margin: 0;
-        color: white;
-        line-height: 33px;
-        font-weight: normal;
-      }
-    }
-  }
+
   .footerBottom{
     padding-top: 30px;
+  }
+  h5{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
   }
 }
