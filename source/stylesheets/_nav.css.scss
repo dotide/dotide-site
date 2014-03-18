@@ -9,3 +9,13 @@ nav.navbar{
   border: none;
   font-weight: bold;
 }
+.icons-nav{
+  padding-bottom: 10px;
+  a.reverse{
+    color: $gray-border;
+  }
+  span{
+    font-size: 18px;
+    padding-right: 8px;
+  }
+}
