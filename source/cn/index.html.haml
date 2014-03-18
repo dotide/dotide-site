@@ -5,18 +5,19 @@ title: 首页
 .brand
   .bg-slide
     = image_tag("slide1-full.jpg")
-  .item-desc
+  .item-desc.hidden-xs
     .container
-      %br
-      %br
-      %br
-      %br
-      %br
-      %br
-      %br
       %h2= "Dotide"
       %p= "专注提供时序数据与解决方案"
       %br
+      %a.btn.btn-primary{:href => "#"}
+        = "了解更多"
+      %a.btn.btn-default{:href => "/cn/price.html"}
+        = "了解价格"
+  .item-desc-small.visible-xs
+    .container
+      %h2= "Dotide"
+      %p= "专注提供时序数据与解决方案"
       %a.btn.btn-primary{:href => "#"}
         = "了解更多"
       %a.btn.btn-default{:href => "/cn/price.html"}
@@ -114,17 +115,25 @@ title: 首页
           %p
             %strong= "免费实验:"
             = "Dotide 提供 50 条数据流，1 万个数据点的免费使用量，支持企 业和开发者进行产品研发、接口调试、场景测试等使用，Dotide 是企业和开发 者时序数据应用开发的免费实验平台"
+.blackBg
+  .container
+    .row
+      .col-lg-6
+        %h4= "免费计划，体验套餐，定制方案"
+      .col-lg-3.details-btn.hidden-xs
+        %a.btn.btn-primary.btn-small{:href => "/cn/price.html"}= "了解详情"
+      .col-lg-5.details-btn-small.visible-xs
+        %a.btn.btn-primary.btn-small{:href => "/cn/price.html"}= "了解详情"
+
 - content_for :javascripts do
   :javascript
     $(document).ready(function() {
       $('.readMore').click(function(){
-        console.log('click');
-        console.log($(this).siblings());
-        $(this).hide();
-        $(this).siblings('.details').show();
+        $('.readMore').hide();
+        $('.details').show();
         });
       $('.hideBtn').click(function(){
-        $(this).parent('.details').hide();
-        $(this).parent('.details').siblings('.readMore').show();
+        $('.details').hide();
+        $('.readMore').show();
         })
     });

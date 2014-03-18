@@ -1,17 +1,7 @@
-body .btn{
-  border: solid 2px $primary-hover;
-  padding-left: 15px;
-  padding-right: 15px;
-  &.btn-primary{
-    background-color: $primary;
-    border: solid 2px $primary;
-    &:hover{
-      background-color: $primary-hover;
-      border: solid 2px $primary-hover;
-    }
-  }
-}
 body{
+  img{
+    width: 100%;
+  }
   a{
     color: $primary;
     &:hover{
@@ -19,11 +9,14 @@ body{
       text-decoration: none;
     }
   }
-  a.reverse{
+  a.reverse, span.reverse{
     color: $primary-hover;
     &:hover{
       color: $primary;
     }
+  }
+  h2{
+    font-size: 32px;
   }
   h3{
     color: black;
@@ -37,9 +30,20 @@ body{
     color: black;
     font-size: 18px;
   }
+  .btn{
+    border: solid 2px $primary-hover;
+    padding: 8px 25px 8px 25px;
+  }
+  .btn.btn-primary{
+    background-color: $primary;
+    border: solid 2px $primary;
+    &:hover{
+      background-color: $primary-hover;
+      border: solid 2px $primary-hover;
+    }
+  }
   .btn.btn-default{
     color: $gray-text;
-    padding: 8px 25px 8px 25px;
     background: transparent;
   }
   .btn.btn-black{
@@ -55,7 +59,7 @@ input.form-control, textarea.form-control{
 }
 .has-feedback{
   input{
-    padding-left: 40px;
+    padding-left: 45px;
     width: 90%;
   }
   textarea.form-control{

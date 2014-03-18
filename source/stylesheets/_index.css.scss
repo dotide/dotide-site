@@ -1,43 +1,49 @@
 .brand{
+  position: relative;
   .bg-slide{
+    background: image-url('bg-slider1.jpg') no-repeat top center;
+    z-index: -1;
+    text-align: center;
     img{
-      width: 100%;
-      height: auto;
+      display: inline-block;
+      width: auto;
+      min-height: 180px;
+      max-width: 100%;
     }
-  }
-  .container{
-    height: 410px;
   }
   .btn-primary{
     margin-right: 20px;
   }
-  .btn-default{
-    background: transparent;
-    color: $gray-btn;
-    border: solid 2px $gray-btn;
-    &:hover{
-      color: $gray-text;
-      border-color: $gray-text;
-    }
-  }
   .item-desc{
     position: absolute;
-    top: 50px;
-    bottom: 0;
+    top: 70px;
     left: 0;
     right: 0;
+    bottom: 0;
+  }
+  .item-desc-small{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .container{
+      h2{
+        margin-top: 5px;
+      }
+    }
   }
 }
 .grayBox{
   background: $gray-bg;
   .moreInfo{
     margin: 56px 0 56px 0;
-    > * {
-      margin-left: 56px;
-    }
     p{
       color: $gray-text;
       font-weight: bold;
+    }
+    h5{
+      text-indent: 1em;
     }
     span{
       margin-left: 0;
@@ -76,9 +82,39 @@
     margin-top: 56px;
     margin-bottom: 56px;
   }
+  .col-lg-6{
+    img{
+      width: 50%;
+    }
+    text-align: center;
+  }
   .gray-desc{
     background-color: $gray-bg;
     padding-top: 56px;
     padding-bottom: 56px;
+  }
+}
+.blackBg{
+  background-color: black;
+  a{
+    color: white;
+  }
+  .container{
+    padding-top: 56px;
+    padding-bottom: 56px;
+    text-align: center;
+    .details-btn-small{
+      .btn{
+        padding: 6px 10px 6px 10px;
+      }
+      margin-top: 10px;
+    }
+    h4{
+      text-align: center;
+      margin: 0;
+      color: white;
+      line-height: 33px;
+      font-weight: normal;
+    }
   }
 }

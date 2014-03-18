@@ -1,5 +1,12 @@
+// @media screen and (max-width:750){
+//   .titleBox{
+//     background-size: 200%;
+//   }
+// }
 .titleBox{
   background-image: image-url('bckgr.jpg');
+  background-repeat: no-repeat;
+  background-size: 250%;
   padding-top: 56px;
   padding-bottom: 56px;
   .btn{
@@ -8,7 +15,7 @@
 }
 .whiteBox{
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   i{
     font-size: 25px;
   }
@@ -28,6 +35,7 @@
     font-size: 22px;
   }
 }
-.map img{
+#map{
   width: 100%;
+  height: 400px;
 }
