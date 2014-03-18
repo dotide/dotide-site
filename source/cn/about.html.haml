@@ -9,71 +9,97 @@ title: 关于
         %h3= "Get in touch with us"
         %p= "At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific, where all the mail-steamers, and those carrying travellers"
       .col-lg-3
-        %a.btn.btn-default.pull-right{:href => "#"}= "了解更多"
+        %a.btn.btn-default.pull-right{:href => "#about"}= "了解更多"
 .whiteBox
   .container
     .row
       .col-lg-10
-        %h5
-          %span
-            = "Contact"
+        %ul.nav.nav-tabs
+          %li.active
+            %a{:href => "#about", :"data-toggle" => "tab"}
+              %h5
+                %span
+                  = "About"
+          %li
+            %a{:href => "#contact", :"data-toggle" => "tab"}
+              %h5
+                %span
+                  = "Contact"
       .col-lg-2.hidden-xs
         .homeSign.pull-right
-          %a.reverse{:href => "/"}
+          %a.reverse{:href => "/cn/"}
             %i.fa.fa-home
-.map
-  #map
-.contactBox
-  .container
-    .row
-      .col-lg-3
-        %h5.headerSmall
-          %span
-            %i.fa.fa-compass
-            = "VISIT US"
-        %p
-          %strong= "INVISION Inc."
-          %br
-          = "2133 Stanton Hollow Road"
-          %br
-          = "Acton, MA 01720"
-          %br
-          %br
-        %h5.headerSmall
-          %span
-            %i.fa.fa-phone
-            = "CONTACT"
-        %p
-          = "Phone: 781-524-8782"
-          %br
-          = "Fax: 781-542-7676"
-          %br
-          %br
-          %span
-            %a.reverse{:href => "mailto:contact@invision.co"}= "contact@invision.com"
-      .col-lg-1
-      .col-lg-8
-        %form.form-horizontal{role: "form"}
+  .tab-content
+    .about.tab-pane.active#about
+      .container
+        %h4= "About US"
+        %p= "At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific, where all the mail-steamers, and those carrying travellers between North America, China, Japan, and the Oriental islands put in. It is situated in the bay of Yeddo, and at but a short distance from that second capital of the Japanese Empire, and the residence of the Tycoon, the civil Emperor, before the Mikado, the spiritual Emperor, absorbed his office in his own. The Carnatic anchored at the quay near the custom-house, in the midst of a crowd of ships bearing the flags of all nations. Passepartout went timidly ashore on this so curious territory of the Sons of the Sun. He had nothing better to do than, taking chance for his guide, to wander aimlessly through the streets of Yokohama."
+        .office
+          %h4= "成员"
           .row
-            .col-lg-6
-              .form-group.has-feedback
-                %input.form-control{type: "text", placeholder: "Your name"}
-                %span.form-control-feedback.fa.fa-user
-            .col-lg-6
-              .form-group.has-feedback
-                %input.form-control{type: "text", placeholder: "Your email"}
-                %span.form-control-feedback.fa.fa-envelope
+            .col-lg-3
+              = image_tag("team01.jpg")
+            .col-lg-3
+              = image_tag("team02.jpg")
+            .col-lg-3
+              = image_tag("team03.jpg")
+            .col-lg-3
+              = image_tag("team02.jpg")
+    .contact.tab-pane#contact
+      .container
+        .map
+          #map
+      .contactBox
+        .container
           .row
-            .col-lg-12
-              .form-group.has-feedback.hidden-xs
-                %textarea.form-control{placeholder: "Your email"}
-                %span.form-control-feedback.fa.fa-pencil
-              .form-group.has-feedback.visible-xs
-                %textarea.form-control{placeholder: "Your email"}
-                %span.form-control-feedback.fa.fa-pencil
+            .col-lg-3
+              %h5.headerSmall
+                %span
+                  %i.fa.fa-compass
+                  = "VISIT US"
+              %p
+                %strong= "INVISION Inc."
+                %br
+                = "2133 Stanton Hollow Road"
+                %br
+                = "Acton, MA 01720"
+                %br
+                %br
+              %h5.headerSmall
+                %span
+                  %i.fa.fa-phone
+                  = "CONTACT"
+              %p
+                = "Phone: 781-524-8782"
+                %br
+                = "Fax: 781-542-7676"
+                %br
+                %br
+                %span
+                  %a.reverse{:href => "mailto:contact@invision.co"}= "contact@invision.com"
+            .col-lg-1
+            .col-lg-8
+              %form.form-horizontal{role: "form"}
+                .row
+                  .col-lg-6
+                    .form-group.has-feedback
+                      %input.form-control{type: "text", placeholder: "Your name"}
+                      %span.form-control-feedback.fa.fa-user
+                  .col-lg-6
+                    .form-group.has-feedback
+                      %input.form-control{type: "text", placeholder: "Your email"}
+                      %span.form-control-feedback.fa.fa-envelope
+                .row
+                  .col-lg-12
+                    .form-group.has-feedback.hidden-xs
+                      %textarea.form-control{placeholder: "Your email"}
+                      %span.form-control-feedback.fa.fa-pencil
+                    .form-group.has-feedback.visible-xs
+                      %textarea.form-control{placeholder: "Your email"}
+                      %span.form-control-feedback.fa.fa-pencil
 
-          .row
-            %input.btn.btn-primary.btn-lg{type: "submit", value: "Send"}
+                .row
+                  %input.btn.btn-primary.btn-lg{type: "submit", value: "Send"}
 - content_for :javascripts do
   %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Mp7cWzjLYtiH9BzZhnRZtlL5RRO4V0A&sensor=true"}
   :javascript

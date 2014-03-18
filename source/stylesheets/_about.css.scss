@@ -19,9 +19,33 @@
   i{
     font-size: 25px;
   }
-  h5 span{
-    border-bottom: solid 3px $primary;
-    padding: 0 10px 20px 10px;
+  h5{
+    padding: 0 10px 10px 10px;
+    color: $gray-text;
+  }
+  .homeSign{
+    padding-top: 10px;
+  }
+  .nav-tabs{
+    border: none !important;
+    li.active h5{
+      border-bottom: solid 2px $primary;
+    }
+    a{
+      padding: 0;
+      border: none !important;
+      &:hover{
+        color: black;
+        background: white;
+      }
+    }
+  }
+  .tab-content{
+    margin-top: 15px;
+    .office{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   }
 }
 .contactBox{
