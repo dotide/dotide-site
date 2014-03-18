@@ -1,30 +1,36 @@
 .brand{
   position: relative;
   .bg-slide{
+    background: url(/images/bg-slider1.jpg) no-repeat top center;
     z-index: -1;
-    position: absolute;
-    top: 0;
+    text-align: center;
     img{
-      height: auto;
-      min-height: 160px;
+      display: inline-block;
+      width: auto;
+      min-height: 180px;
+      max-width: 100%;
     }
   }
   .btn-primary{
     margin-right: 20px;
   }
   .item-desc{
-    .container{
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   .item-desc-small{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     .container{
       h2{
         margin-top: 5px;
       }
-      padding-top: 5px;
-      padding-bottom: 5px;
     }
   }
 }
@@ -96,12 +102,12 @@
   .container{
     padding-top: 56px;
     padding-bottom: 56px;
+    text-align: center;
     .details-btn-small{
-      text-align: center;
-      margin-top: 10px;
       .btn{
         padding: 6px 10px 6px 10px;
       }
+      margin-top: 10px;
     }
     h4{
       text-align: center;
