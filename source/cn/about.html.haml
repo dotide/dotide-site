@@ -6,8 +6,8 @@ title: 关于
   .container
     .row
       .col-lg-9
-        %h3= "Get in touch with us"
-        %p= "At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific, where all the mail-steamers, and those carrying travellers"
+        %h3= "关于我们"
+        %p= "Dotide是一个极客创业团队，我们专注于解决时序数据的存储和分析问题。在这个云计算和物联网的时代，将有大量的传感器、测量表、监控器、服务器在持续运行，并将产生海量的时序数据。通过对时序数据的智能化分析，物联网和云计算才能够真正掌握设备、身体、房屋、汽车、轮船等一切移动和不移动设施的实时状况，并根据历史轨迹的分析，预测将来的趋势。因此，Dotide的使命是让时序数据运营更简单，从而让人们真正进入智能物联网的时代。"
       .col-lg-3
         %a.btn.btn-default.pull-right{:href => "#about"}= "了解更多"
 .whiteBox
@@ -32,8 +32,34 @@ title: 关于
   .tab-content
     .about.tab-pane.active#about
       .container
-        %h4= "关于我们"
-        %p= "At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific, where all the mail-steamers, and those carrying travellers between North America, China, Japan, and the Oriental islands put in. It is situated in the bay of Yeddo, and at but a short distance from that second capital of the Japanese Empire, and the residence of the Tycoon, the civil Emperor, before the Mikado, the spiritual Emperor, absorbed his office in his own. The Carnatic anchored at the quay near the custom-house, in the midst of a crowd of ships bearing the flags of all nations. Passepartout went timidly ashore on this so curious territory of the Sons of the Sun. He had nothing better to do than, taking chance for his guide, to wander aimlessly through the streets of Yokohama."
+        .office
+          %h4= '我们在这里'
+          .row
+            .col-lg-3
+              = image_tag('office-1.jpg')
+              %h5= '创新的工作环境'
+            .col-lg-3
+              = image_tag('office-2.jpg')
+              %h5= '丰富的小零食'
+            .col-lg-3
+              = image_tag('office-3.jpg')
+              %h5= '健康的生活'
+            .col-lg-3
+              = image_tag('office-4.jpg')
+              %h5= '休闲和娱乐'
+          .row
+            .col-lg-3
+              = image_tag('office-5.jpg')
+              %h5= '方便的会议讨论'
+            .col-lg-3
+              = image_tag('office-6.jpg')
+              %h5= '创业文化'
+            .col-lg-3
+              = image_tag('office-7.jpg')
+              %h5= '开放的工作室1'
+            .col-lg-3
+              = image_tag('office-8.jpg')
+              %h5= '开放的工作室2'
         .office
           %h4= "成员"
           .row
