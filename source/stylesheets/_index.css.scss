@@ -1,11 +1,14 @@
 .brand{
   position: relative;
   .bg-slide{
-    background: image-url('bg-slider1.jpg') no-repeat top center;
+    background-image: image-url('bg-slider1.jpg');
+    background-position:center top;
+    background-repeat:no-repeat;
+    min-height: 180px;
     z-index: -1;
     text-align: center;
     img{
-      display: inline-block;
+      // display: inline-block;
       width: auto;
       min-height: 180px;
       max-width: 100%;
@@ -13,6 +16,9 @@
   }
   .btn-primary{
     margin-right: 20px;
+  }
+  a.btn-default{
+    color: rgba(255, 255, 255, 0.8);
   }
   .item-desc{
     position: absolute;
@@ -30,6 +36,7 @@
     .container{
       h2{
         margin-top: 5px;
+        color: inherit;
       }
     }
   }
@@ -87,6 +94,9 @@
       width: 50%;
     }
     text-align: center;
+    p{
+      text-align: left;
+    }
   }
   .gray-desc{
     background-color: $gray-bg;
@@ -117,4 +127,8 @@
       font-weight: normal;
     }
   }
+}
+
+.light-text{
+  color: rgba(255, 255, 255, 0.8);
 }
