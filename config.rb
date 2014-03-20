@@ -56,18 +56,16 @@ activate :directory_indexes
 #   end
 # end
 
-# set :css_dir, 'stylesheets'
-
-# set :js_dir, 'javascripts'
-
-# set :images_dir, 'images'
+### Assets PATH
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 
 ###
 # Template
 ###
 
-set :haml, { ugly: true }
-
+set :haml, ugly: true
 
 # Build-specific configuration
 configure :build do
