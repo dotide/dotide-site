@@ -1,7 +1,14 @@
 nav.navbar{
   .navbar-brand{
-    font-size: 20px;
-    color: black;
+    height: 50px !important;
+    padding-top: 3px;
+    img{
+      height: 35px;
+      width: auto;
+    }
+    &:hover{
+      opacity: 0.8;
+    }
   }
   background-color: white;
   border: none;
