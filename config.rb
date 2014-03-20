@@ -45,7 +45,9 @@ end
 # Reload the browser automatically whenever files change
 activate :livereload
 
-activate :i18n, langs: [:cn]
+activate :i18n, langs: [:cn, :en]
+
+activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -87,5 +89,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  set :http_prefix, 'https://dotide-tmp.b0.upaiyun.com/'
+  set :http_prefix, 'https://dotide-cdn.b0.upaiyun.com/'
 end
