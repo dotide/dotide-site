@@ -6,15 +6,15 @@
           %a.navbar-brand{:href => "/"}
             = image_tag("logo.png")
         %ul.nav.navbar-nav.navbar-right
-          %li
+          %li.nav-home
             %a{:href => "/"}= "首页"
           %li
             %a{:href => "http://developer.dotide.com/"}= "开发文档"
           / %li
           /   %a{:href => "http://blog.dotide.com/"}= "博客"
-          %li
+          %li.nav-product
             %a{:href => "/product/"}= "产品"
-          %li
+          %li.nav-about
             %a{:href => "/about/"}= "关于"
           %li
             %a{:href => "#"}= "进入控制台"
@@ -23,15 +23,15 @@
           %span.navbar-brand.fa.fa-bars
         .navbar-nav#navtab.collapse
           %ul
-            %li
+            %li.nav-home
               %a.reverse{:href => "/"}= "首页"
             %li
               %a.reverse{:href => "http://developer.dotide.com/"}= "开发文档"
             / %li
             /   %a.reverse{:href => "http://blog.dotide.com/"}= "博客"
-            %li
+            %li.nav-product
               %a.reverse{:href => "/product/"}= "产品"
-            %li
+            %li.nav-about
               %a.reverse{:href => "/about/"}= "关于"
             %li
               %a.reverse{:href => "#"}= "进入控制台"
@@ -47,12 +47,3 @@
         %span.fa.fa-github
       %a.reverse{:href => "http://weibo.com/dotide"}
         %span.fa.fa-weibo
-
-- content_for :javascripts do
-  :javascript
-    $(document).ready(function(){
-      $('.navbar-brand').click(function(){
-        $('#navtab').collapse('toggle');
-        });
-      });
-    $('.navbar-brand').collapse()

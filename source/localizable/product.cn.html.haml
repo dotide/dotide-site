@@ -140,3 +140,7 @@ title: 产品 - Dotide - 时序数据服务平台
             %a.btn.btn-black{:href => "#"}
               = "立即联系"
               %i.fa.fa-chevron-right
+
+- content_for :javascripts do
+  :javascript
+    $('nav.navbar li.nav-product').addClass('current');
