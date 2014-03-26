@@ -14,7 +14,7 @@ title: 关于我们 - Dotide - 时序数据服务平台
 .whiteBox
   .container
     .office
-      %h4
+      %h3
         = '我们在这里'
         %small
           %a{href: 'http://www.crabxlab.com'}= '(南京螃蟹实验室)'
@@ -44,8 +44,9 @@ title: 关于我们 - Dotide - 时序数据服务平台
         .col-lg-3
           = image_tag('office-8.jpg')
           %h5= '开放的工作室2'
+    %hr/
     .office
-      %h4= "成员"
+      %h3= "成员"
       .row
         .col-lg-3
           %a{href: 'https://github.com/yandy'}
@@ -62,6 +63,14 @@ title: 关于我们 - Dotide - 时序数据服务平台
           %a{href: 'https://github.com/wendycan'}
             = image_tag("member-wx.png", alt: '@wendycan', title: '@wendycan')
             %h5= '王欣 (Front-End Engineer)'
+.blackBg
+  .container
+    .row
+      .col-lg-8
+        %h4= "我们需要优秀的 Web 工程师(前端、后端、全栈)加入我们！"
+      .col-lg-4
+        %a.btn.btn-primary.btn-small{href: 'mailto:jobs@dotide.com'}
+          = '联系我们'
 
 - content_for :javascripts do
   :javascript
