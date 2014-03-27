@@ -31,11 +31,11 @@ body{
     color: black;
     font-size: 18px;
   }
-  .btn{
+  .button{
     border: solid 2px $primary-hover;
     padding: 8px 25px 8px 25px;
   }
-  .btn.btn-primary{
+  .button.btn-primary{
     background-color: $primary;
     border: solid 2px $primary;
     &:hover{
@@ -43,11 +43,14 @@ body{
       border: solid 2px $primary-hover;
     }
   }
-  .btn.btn-default{
+  .button.btn-default{
     color: $gray-text;
     background: transparent;
+    &:hover{
+      border-color: $gray-light-border;
+    }
   }
-  .btn.btn-black{
+  .button.btn-black{
     background-color: black;
     color: white;
   }

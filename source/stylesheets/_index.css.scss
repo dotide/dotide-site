@@ -1,5 +1,8 @@
 .brand{
   position: relative;
+  h2{
+    color: rgba(255, 255, 255, 0.8);
+  }
   .bg-slide{
     background-image: image-url('bg-slider1.jpg');
     background-position:center top;
@@ -89,7 +92,7 @@
     margin-top: 56px;
     margin-bottom: 56px;
   }
-  .col-lg-6{
+  .large-6{
     img{
       width: 50%;
     }
@@ -109,7 +112,7 @@
   a{
     color: white;
   }
-  .container{
+  .row{
     padding-top: 56px;
     padding-bottom: 56px;
     text-align: center;
@@ -128,7 +131,6 @@
     }
   }
 }
-
 .light-text{
   color: rgba(255, 255, 255, 0.8);
 }

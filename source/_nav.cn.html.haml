@@ -1,40 +1,53 @@
-.nav
-  %nav.navbar.navbar-default{role: "navigation"}
-    .container
-      .top-nav.hidden-xs
-        .navbar-header
-          %a.navbar-brand{:href => "/"}
-            = image_tag("logo.png")
-        %ul.nav.navbar-nav.navbar-right
-          %li.nav-home
-            %a{:href => "/"}= "首页"
-          %li
-            %a{:href => "http://developer.dotide.com/"}= "开发文档"
-          / %li
-          /   %a{:href => "http://blog.dotide.com/"}= "博客"
-          %li.nav-product
-            %a{:href => "/product/"}= "产品"
-          %li.nav-about
-            %a{:href => "/about/"}= "关于"
-          %li
-            %a{:href => "/dashboard/"}= "进入控制台"
-      .top-tab.visible-xs
-        .navbar-header
-          %span.navbar-brand.fa.fa-bars
-        .navbar-nav#navtab.collapse
-          %ul
-            %li.nav-home
-              %a.reverse{:href => "/"}= "首页"
-            %li
-              %a.reverse{:href => "http://developer.dotide.com/"}= "开发文档"
-            / %li
-            /   %a.reverse{:href => "http://blog.dotide.com/"}= "博客"
-            %li.nav-product
-              %a.reverse{:href => "/product/"}= "产品"
-            %li.nav-about
-              %a.reverse{:href => "/about/"}= "关于"
-            %li
-              %a.reverse{:href => "/dashboard/"}= "进入控制台"
+.off-canvas-wrap
+  .inner-wrap
+    %nav.tab-bar.show-for-small
+      %section.left-small
+        %a.left-off-canvas-toggle.menu-icon
+          %span
+      %section.middle.tab-bar-section
+        %a{:href => "/"}
+          %h1= 'DOTIDE'
+    %aside.left-off-canvas-menu.show-for-small
+      %ul.off-canvas-list
+        %li
+          %a.reverse{href: "/"}= '首页'
+        %li
+          %a.reverse{href: "http://developer.dotide.com/"}= '开发文档'
+        / %li
+        /   %a.reverse{href: "http://blog.dotide.com/"}= "博客"
+        %li
+          %a.reverse{href: "/product/"}= '产品'
+        %li
+          %a.reverse{href: "/about/"}= '关于'
+        %li
+          %a.reverse{href: "/dashboard/"}= '进入控制台'
+        / %li
+        /   %a.reverse{href: "/locale?lang=en"}= 'English'
+    %a.exit-off-canvas
+.row
+  %nav.top-bar.hide-for-small{:'data-topbar' => true}
+    %ul.title-area
+      %li.name
+        %a.default{href: '/'}
+          = image_tag("logo.png")
+    %section.top-bar-section
+      %ul.right
+        %li.divider
+        %li
+          %a{href: "/"}= '首页'
+        %li
+          %a{href: "http://developer.dotide.com/"}= '开发文档'
+        / %li
+        /   %a{href: "http://blog.dotide.com/cn/"}= "博客"
+        %li
+          %a{href: "/product/"}= '产品'
+        %li
+          %a{href: "/about/"}= '关于'
+        %li
+          %a{href: "/dashboard/"}= '进入控制台'
+        / %li
+        /   %a{href: "/locale?lang=en"}= 'English'
+.row
   .icons-nav
     .container
       %a.reverse{:href => "https://www.facebook.com/dotidehq"}
