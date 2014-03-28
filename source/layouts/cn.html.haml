@@ -26,11 +26,13 @@
   = yield_content :head
 
 %body
-  = partial "nav.cn"
-  / Main page container
-  = yield
-  / Footer
-  = partial "footer.cn"
+  .off-canvas-wrap
+    .inner-wrap
+      = partial "nav.cn"
+      / Main page container
+      = yield
+      / Footer
+      = partial "footer.cn"
   /[if lt IE 9]
     #ie-warning-overlay
       #ie-warning
@@ -66,13 +68,22 @@
   = yield_content :javascripts
   :javascript
     $(document).ready(function () {
-      $('.navbar-brand').click(function(){
-        $('#navtab').collapse('toggle');
+      $(document).foundation({
+        orbit: {
+          slide_number: false,
+          timer: true,
+          timer_speed: 2000,
+          pause_on_hover: false,
+          next_on_click: true,
+          bullets: false
+          }
         });
+      $('.navbar-brand').click(function(){
+        // $('#navtab').collapse('toggle');
       });
       #{yield_content :onready}
     });
-    $('.navbar-brand').collapse();
+    // $('.navbar-brand').collapse();
 
   - if build?
     :javascript

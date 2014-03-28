@@ -1,13 +1,20 @@
+
 body{
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
   img{
     width: 100%;
   }
-  a{
+  a, .primary{
     color: $primary;
     &:hover{
       color: $primary-hover;
       text-decoration: none;
+    }
+  }
+  a.normal{
+    color: $gray-text;
+    &:hover{
+      color: black;
     }
   }
   a.reverse, span.reverse, li.reverse{
@@ -16,26 +23,11 @@ body{
       color: $primary;
     }
   }
-  h2{
-    font-size: 32px;
-  }
-  h3{
-    color: black;
-    font-size: 28px;
-  }
-  h4{
-    color: black;
-    font-size: 23px;
-  }
-  h5{
-    color: black;
-    font-size: 18px;
-  }
-  .btn{
+  .button{
     border: solid 2px $primary-hover;
     padding: 8px 25px 8px 25px;
   }
-  .btn.btn-primary{
+  .button.btn-primary{
     background-color: $primary;
     border: solid 2px $primary;
     &:hover{
@@ -43,11 +35,14 @@ body{
       border: solid 2px $primary-hover;
     }
   }
-  .btn.btn-default{
+  .button.btn-default{
     color: $gray-text;
     background: transparent;
+    &:hover{
+      border-color: $gray-light-border;
+    }
   }
-  .btn.btn-black{
+  .button.btn-black{
     background-color: black;
     color: white;
   }

@@ -1,24 +1,13 @@
-.carousel{
+.slides{
   background-color: $gray-bg;
-  .container{
-    margin-top: 56px;
-    margin-bottom: 56px;
-  }
-  .col-lg-6{
-    text-align: left;
-  }
-  .col-lg-5{
+  .large-5{
     img{
       width: 50%;
+      display: inline;
     }
-  }
-  .carousel-control{
-    width: 1%;
   }
 }
 .priceTable{
-  padding-top: 56px;
-  padding-bottom: 56px;
   span{
     padding-top: 10px;
     padding-bottom: 10px;
