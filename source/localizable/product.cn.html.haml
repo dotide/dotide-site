@@ -40,99 +40,96 @@ title: 产品 - Dotide - 时序数据服务平台
           = image_tag("product-3.png")
 .priceTable.wrap
   .row
-    .medium-10.large-10.columns.medium-.large-centered
-      .priceBox
-        %span.pricePlan
-          = "虚拟实验室"
-        %hr
-        %span.emphasis
-          %sup= "￥"
-          = "0."
-          %sup= "0"
-          = "/月"
-        %hr
-        %span
-          %strong= "任何开发者均可申请"
-        %hr
-        %span= "开放 API 接口"
-        %hr
-        %span= "传输加密"
-        %hr
-        %span= "3X备份"
-        %hr
-        %span= "公有云服务"
-        %hr
-        %span= "100个数据流"
-        %hr
-        %span= "100万个数据点"
-        %hr
-        %span
-          %strong= "完全免费"
-        %hr
-        %span.emphasis-2
-          %a.btn.btn-black{:href => "/login"}
-            = "立即申请"
-            %i.fa.fa-chevron-right
-      .priceBox.spec
-        %span.pricePlan
-          = "公有云服务"
-        %hr
-        %span.emphasis
-          %sup= "￥"
-          = "99."
-          %sup= "99"
-          = "/月"
-        %hr
-        %span
-          %strong= "选择公有云付费服务"
-        %hr
-        %span= "开放 API 接口"
-        %hr
-        %span= "传输加密"
-        %hr
-        %span= "3X备份"
-        %hr
-        %span= "公有云服务"
-        %hr
-        %span= "不限制数据流"
-        %hr
-        %span= "1亿个数据点"
-        %hr
-        %span= "99.99元/月"
-        %hr
-        %span.emphasis-2
-          %a.btn.btn-black{:href => "mailto:support@dotide.com"}
-            = "立即申请"
-            %i.fa.fa-chevron-right
-      .priceBox
-        %span.pricePlan
-          = "私有云服务"
-        %hr
-        %span.emphasis
-          = "方案报价"
-        %hr
-        %span
-          %strong= "选择私有云部署服务"
-        %hr
-        %span= "云架构独立部署"
-        %hr
-        %span= "数据库系统独立部署"
-        %hr
-        %span= "可视化定制"
-        %hr
-        %span= "独立服务器"
-        %hr
-        %span= "不限数据流"
-        %hr
-        %span= "不限数据点"
-        %hr
-        %span= "方案报价"
-        %hr
-        %span.emphasis-2
-          %a.btn.btn-black{:href => "mailto:support@dotide.com"}
-            = "立即联系"
-            %i.fa.fa-chevron-right
+    .large-9.columns.large-centered
+      .row.collapse
+        .large-4.columns.medium-4
+          %ul.pricing-table
+            %li.title= "虚拟实验室"
+            %li.price
+              %sup= "￥"
+              = "0."
+              %sup= "0"
+              = "/月"
+            %li.description
+              %strong= "任何开发者均可申请"
+            %li.bullet-item
+              %span= "开放 API 接口"
+            %li.bullet-item
+              %span= "传输加密"
+            %li.bullet-item
+              %span= "3X备份"
+            %li.bullet-item
+              %span= "公有云服务"
+            %li.bullet-item
+              %span= "100个数据流"
+            %li.bullet-item
+              %span= "100万个数据点"
+            %li.bullet-item
+              %span= "完全免费"
+            %li.cta-button
+              %a.button.btn-black{:href => "/login"}
+                = "立即申请"
+                %i.fa.fa-chevron-right
+          / .priceBox
+          /   %span.pricePlan
+          /   %hr
+          /   %span.emphasis
+          /   %hr
+          /   %span
+        .large-4.columns.medium-4
+          %ul.pricing-table.spec
+            %li.title= "公有云服务"
+            %li.price
+              %sup= "￥"
+              = "99."
+              %sup= "99"
+              = "/月"
+            %li.description
+              %strong= "选择公有云付费服务"
+            %li.bullet-item
+              %span= "开放 API 接口"
+            %li.bullet-item
+              %span= "传输加密"
+            %li.bullet-item
+              %span= "3X备份"
+            %li.bullet-item
+              %span= "公有云服务"
+            %li.bullet-item
+              %span= "不限制数据流"
+            %li.bullet-item
+              %span= "1亿个数据点"
+            %li.bullet-item
+              %span= "99.99元/月"
+            %li.cta-button
+              %a.button.btn-black{:href => "mailto:support@dotide.com"}
+                = "立即申请"
+                %i.fa.fa-chevron-right
+        .large-4.columns.medium-4
+          %ul.pricing-table
+            %li.title= "私有云服务"
+            %li.price
+              = "方案报价"
+            %li.description
+              %strong= "选择私有云部署服务"
+            %li.bullet-item
+              %span= "云架构独立部署"
+            %li.bullet-item
+              %span= "数据库系统独立部署"
+            %li.bullet-item
+              %span= "可视化定制"
+            %li.bullet-item
+              %span= "独立服务器"
+            %li.bullet-item
+              %span= "不限数据流"
+            %li.bullet-item
+              %span= "不限数据点"
+            %li.bullet-item
+              %span= "方案报价"
+            %li.cta-button
+              %a.button.btn-black{:href => "mailto:support@dotide.com"}
+                = "立即联系"
+                %i.fa.fa-chevron-right
 
 - content_for :javascripts do
   :javascript
-    $('nav.navbar li.nav-product').addClass('current');
+    $('nav.top-bar li.nav-product').addClass('current');

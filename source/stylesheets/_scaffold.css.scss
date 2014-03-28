@@ -27,6 +27,10 @@ body{
     border: solid 2px $primary-hover;
     padding: 8px 25px 8px 25px;
   }
+  .button.btn-black{
+    background-color: black;
+    color: white;
+  }
   .button.btn-primary{
     background-color: $primary;
     border: solid 2px $primary;
@@ -39,7 +43,7 @@ body{
     color: $gray-text;
     background: transparent;
     &:hover{
-      border-color: $gray-light-border;
+      border-color: $gray-dark-border;
     }
   }
   .button.btn-black{

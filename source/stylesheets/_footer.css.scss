@@ -1,35 +1,6 @@
 .footer{
-  padding-bottom: 30px;
-  border-top: solid 1px $gray-border;
-  background-color: $gray-bg;
-  a{
-    color: black;
-    &:hover{
-      color: $primary;
-    }
-  }
-  ul{
-    list-style: none;
-    padding: 0;
-    li{
-      border-bottom: solid 1px $gray-border;
-      &:last-child{
-        border: none;
-      }
-    }
-  }
-  .headerFooter{
-    margin-bottom: 10px;
-  }
-
-  .footerBottom{
-    padding-top: 30px;
-  }
-  h5{
-    font-size: 14px;
-  }
   p{
-    font-size: 12px;
+    margin: 0;
   }
   .qrcode{
     img{

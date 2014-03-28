@@ -60,14 +60,7 @@ title: 关于我们 - Dotide - 时序数据服务平台
         %a{href: 'https://github.com/wendycan'}
           = image_tag("member-wx.png", alt: '@wendycan', title: '@wendycan')
           %h6= '王欣 (Front-End Engineer)'
-.wrap.black-wrap.banner
-  .row
-    .large-8.columns.text-center
-      %h4= "我们需要优秀的 Web 工程师(前端、后端、全栈)加入我们！"
-    .large-4.columns.text-center
-      %a.button.radius.btn-primary.btn-small{href: 'mailto:jobs@dotide.com'}
-        = '联系我们'
 
 - content_for :javascripts do
   :javascript
-    $('nav.navbar li.nav-about').addClass('current');
+    $('nav.top-bar li.nav-about').addClass('current');

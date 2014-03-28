@@ -684,40 +684,40 @@ $orbit-timer-show-progress-bar: false;
 
 // We use these to control the title styles
 // $price-title-bg: #333;
-// $price-title-padding: rem-calc(15 20);
+$price-title-padding: rem-calc(15);
 // $price-title-align: center;
-// $price-title-color: #eee;
-// $price-title-weight: normal;
+$price-title-color: $primary;
+$price-title-weight: bolder;
 // $price-title-size: rem-calc(16);
 // $price-title-font-family: $body-font-family;
 
 // We use these to control the price styles
-// $price-money-bg: #f6f6f6  ;
-// $price-money-padding: rem-calc(15 20);
+$price-money-bg: white;
+$price-money-padding: rem-calc(20);
 // $price-money-align: center;
-// $price-money-color: #333;
-// $price-money-weight: normal;
-// $price-money-size: rem-calc(32);
+$price-money-color: $primary;
+$price-money-weight: bolder;
+$price-money-size: rem-calc(30);
 // $price-money-font-family: $body-font-family;
 
 
 // We use these to control the description styles
 // $price-bg: #fff;
-// $price-desc-color: #777;
-// $price-desc-padding: rem-calc(15);
+$price-desc-color: black;
+$price-desc-padding: rem-calc(10);
 // $price-desc-align: center;
-// $price-desc-font-size: rem-calc(12);
-// $price-desc-weight: normal;
+$price-desc-font-size: rem-calc(13);
+$price-desc-weight: bold;
 // $price-desc-line-height: 1.4;
-// $price-desc-bottom-border: dotted 1px #ddd;
+$price-desc-bottom-border: solid 1px #ddd;
 
 // We use these to control the list item styles
-// $price-item-color: #333;
-// $price-item-padding: rem-calc(15);
+$price-item-color: black;
+$price-item-padding: rem-calc(10);
 // $price-item-align: center;
-// $price-item-font-size: rem-calc(14);
+$price-item-font-size: rem-calc(13);
 // $price-item-weight: normal;
-// $price-item-bottom-border: dotted 1px #ddd;
+$price-item-bottom-border: solid 1px $gray-border;
 
 // We use these to control the CTA area styles
 // $price-cta-bg: #fff;
@@ -1083,7 +1083,7 @@ $topbar-link-bg-active-hover: white;
 
 // We use these to control header font styles
 // $header-font-family: join("Open Sans", $body-font-family);
-// $header-font-weight: 300;
+$header-font-weight: bold;
 // $header-font-style: normal;
 $header-font-color: #000;
 // $header-line-height: 1.4;
@@ -1094,7 +1094,7 @@ $header-font-color: #000;
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44);
 $h2-font-size: rem-calc(37);
-$h3-font-size: rem-calc(27);
+$h3-font-size: rem-calc(26);
 $h4-font-size: rem-calc(23);
 $h5-font-size: rem-calc(18);
 $h6-font-size: rem-calc(15);
@@ -1113,7 +1113,7 @@ $h6-font-size: rem-calc(15);
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-$paragraph-font-size: rem-calc(13);
+$paragraph-font-size: rem-calc(14);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
