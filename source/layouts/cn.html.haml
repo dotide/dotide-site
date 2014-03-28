@@ -66,12 +66,20 @@
   = yield_content :javascripts
   :javascript
     $(document).ready(function () {
+      $(document).foundation({
+        orbit: {
+          slide_number: false,
+          timer: false,
+          next_on_click: true,
+          bullets: false
+          }
+        });
       $('.navbar-brand').click(function(){
-        $('#navtab').collapse('toggle');
+        // $('#navtab').collapse('toggle');
       });
       #{yield_content :onready}
     });
-    $('.navbar-brand').collapse();
+    // $('.navbar-brand').collapse();
 
   - if build?
     :javascript

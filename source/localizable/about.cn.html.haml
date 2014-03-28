@@ -4,73 +4,71 @@ title: 关于我们 - Dotide - 时序数据服务平台
 ---
 
 .titleBox
-  .container
-    .row
-      .col-lg-9
-        %h3= "关于我们"
-        %p= "Dotide 是一个极客创业团队，我们专注于解决时序数据的存储和分析问题。在这个云计算和物联网的时代，将有大量的传感器、测量表、监控器、服务器在持续运行，并将产生海量的时序数据。通过对时序数据的智能化分析，物联网和云计算才能够真正掌握设备、身体、房屋、汽车、轮船等一切移动和不移动设施的实时状况，并根据历史轨迹的分析，预测将来的趋势。因此，Dotide 的使命是让时序数据运营更简单，从而让人们真正进入智能物联网的时代。"
-      .col-lg-3
-        %a.btn.btn-default.pull-right{:href => "mailto:support@dotide.com"}= "联系我们"
+  .row
+    .large-9.columns
+      %h3= "关于我们"
+      %p= "Dotide 是一个极客创业团队，我们专注于解决时序数据的存储和分析问题。在这个云计算和物联网的时代，将有大量的传感器、测量表、监控器、服务器在持续运行，并将产生海量的时序数据。通过对时序数据的智能化分析，物联网和云计算才能够真正掌握设备、身体、房屋、汽车、轮船等一切移动和不移动设施的实时状况，并根据历史轨迹的分析，预测将来的趋势。因此，Dotide 的使命是让时序数据运营更简单，从而让人们真正进入智能物联网的时代。"
+    .large-3.columns
+      %a.button.radius.btn-default.pull-right{:href => "mailto:support@dotide.com"}= "联系我们"
 .whiteBox
-  .container
+  .row
     .office
       %h3
         = '我们在这里'
         %small
           %a{href: 'http://www.crabxlab.com'}= '(南京螃蟹实验室)'
       .row
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-1.jpg')
           %h5= '创新的工作环境'
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-2.jpg')
           %h5= '丰富的小零食'
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-3.jpg')
           %h5= '健康的生活'
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-4.jpg')
           %h5= '休闲和娱乐'
       .row
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-5.jpg')
           %h5= '方便的会议讨论'
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-6.jpg')
           %h5= '创业文化'
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-7.jpg')
           %h5= '开放的工作室1'
-        .col-lg-3
+        .large-3.columns
           = image_tag('office-8.jpg')
           %h5= '开放的工作室2'
     %hr/
     .office
       %h3= "成员"
       .row
-        .col-lg-3
+        .large-3.columns
           %a{href: 'https://github.com/yandy'}
             = image_tag("member-mic.jpg", alt: '@yandy', title: '@yandy')
             %h5= '丁彦 (CEO)'
-        .col-lg-3
+        .large-3.columns
           %a{href: 'https://github.com/wdholmes'}
             = image_tag("member-wd.jpg", alt: '@wdholmes', title: '@wdholmes')
             %h5= '王迪 (CTO)'
-        .col-lg-3
+        .large-3.columns
           = image_tag("member-miles.jpg", alt: '@miles', title: '@miles')
           %h5= '麦熙 (COO)'
-        .col-lg-3
+        .large-3.columns
           %a{href: 'https://github.com/wendycan'}
             = image_tag("member-wx.png", alt: '@wendycan', title: '@wendycan')
             %h5= '王欣 (Front-End Engineer)'
 .blackBg
-  .container
-    .row
-      .col-lg-8
-        %h4= "我们需要优秀的 Web 工程师(前端、后端、全栈)加入我们！"
-      .col-lg-4
-        %a.btn.btn-primary.btn-small{href: 'mailto:jobs@dotide.com'}
-          = '联系我们'
+  .row
+    .large-8.columns
+      %h4= "我们需要优秀的 Web 工程师(前端、后端、全栈)加入我们！"
+    .large-4.columns
+      %a.button.radius.btn-primary.btn-small{href: 'mailto:jobs@dotide.com'}
+        = '联系我们'
 
 - content_for :javascripts do
   :javascript
