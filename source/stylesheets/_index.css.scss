@@ -1,11 +1,16 @@
 .brand{
   position: relative;
   h3, p, a.btn-default{
+    font-weight: normal;
     color: rgba(255, 255, 255, 0.8);
   }
+  .bg-slide{
+    background: image-url('bg-slider1.jpg');
+    text-align: center;
+  }
   .bg-slide img{
-    width: 100%;
-    min-height: 180px;
+    width: auto;
+    min-height: 200px;
   }
   .btn-primary{
     margin-right: 20px;

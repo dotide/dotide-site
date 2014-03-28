@@ -1,7 +1,9 @@
 nav.top-bar{
   .title-area{
     height: 50px !important;
-    padding-top: 3px;
+    li{
+      padding-top: 10px;
+    }
     img{
       height: 35px;
       width: auto;
@@ -15,7 +17,7 @@ nav.top-bar{
       color: black;
     }
     a{
-      font-size: rem-calc(13);
+      font-size: rem-calc(15);
       font-weight: bolder !important;
       padding-right: 0 !important;
     }
