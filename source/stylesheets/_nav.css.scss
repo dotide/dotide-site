@@ -11,13 +11,13 @@ nav.top-bar{
     }
   }
   ul.right{
-    li.current{
+    li.current a{
       color: black;
-      font-size: 16px;
     }
     a{
       font-size: rem-calc(13);
-      font-weight: bold;
+      font-weight: bolder !important;
+      padding-right: 0 !important;
     }
   }
   background-color: white;

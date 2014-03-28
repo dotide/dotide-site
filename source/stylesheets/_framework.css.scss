@@ -1083,7 +1083,7 @@ $topbar-link-bg-active-hover: white;
 
 // We use these to control header font styles
 // $header-font-family: join("Open Sans", $body-font-family);
-// $header-font-weight: 300;
+$header-font-weight: bold;
 // $header-font-style: normal;
 $header-font-color: #000;
 // $header-line-height: 1.4;
@@ -1094,7 +1094,7 @@ $header-font-color: #000;
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44);
 $h2-font-size: rem-calc(37);
-$h3-font-size: rem-calc(27);
+$h3-font-size: rem-calc(26);
 $h4-font-size: rem-calc(23);
 $h5-font-size: rem-calc(18);
 $h6-font-size: rem-calc(15);
@@ -1113,7 +1113,7 @@ $h6-font-size: rem-calc(15);
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-$paragraph-font-size: rem-calc(13);
+$paragraph-font-size: rem-calc(14);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);

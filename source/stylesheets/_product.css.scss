@@ -8,22 +8,20 @@
   }
 }
 .priceTable{
-  hr{
-    margin-top: 0;
-    margin-bottom: 0;
-  }
   .pricing-table{
     .price{
       border-bottom: solid 1px $gray-border;
+    }
+    .cta-button a{
+      padding-bottom: 10px;
+      font-size: rem-calc(12);
     }
     &.spec{
       margin-top: -10px;
       .title{
         padding-bottom: 25px;
         color: white;
-      }
-      .cta-button{
-        padding-bottom: 10px;
+        background-color: $primary;
       }
     }
   }
