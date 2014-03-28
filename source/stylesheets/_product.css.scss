@@ -15,6 +15,9 @@
     .cta-button a{
       padding-bottom: 10px;
       font-size: rem-calc(12);
+      i{
+        padding-left: 10px;
+      }
     }
     &.spec{
       margin-top: -10px;

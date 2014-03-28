@@ -1,18 +1,19 @@
 %footer.footer
-  .footerBottom
+  .wrap.gray-wrap
     .row
-      .large-6.columns
+      .large-4.columns.medium-6.small-only-text-center.large-push-8
+        %h4.headerFooter.light= "关于 Dotide"
+        %p.aboutUs
+          = "Dotide 是一个智能物联网领域的时序数据服务平台，专注为智慧城市、智能交通、智能医疗、智能农业、智能家居及可穿戴设备等领域提供时序数据服务和个性化的解决方案。"
+          %a{href: 'https://dotide.com'}
+      .large-6.columns.medium-6.small-only-text-center.large-pull-4
         %h4.headerFooter= "联系我们"
         .contactFooter
           %p= "江苏南京浦口区万寿路15号"
           %p= "211800"
           %br
-          %p= "support@dotide.com"
-      .large-2.columns
+          %a.reverse{:href => "mailto:support@dotide.com"}
+            %p= "support@dotide.com"
+      .large-2.columns.medium-6.small-only-text-center.large-pull-4
         .qrcode
           = image_tag('wx-qrcode.jpg')
-      .large-4.columns
-        %h4.headerFooter.light= "关于 Dotide"
-        %p.aboutUs
-          = "Dotide 是一个智能物联网领域的时序数据服务平台，专注为智慧城市、智能交通、智能医疗、智能农业、智能家居及可穿戴设备等领域提供时序数据服务和个性化的解决方案。"
-          %a{href: 'https://dotide.com'}
