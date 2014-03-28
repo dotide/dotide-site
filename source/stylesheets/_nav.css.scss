@@ -1,5 +1,5 @@
-nav.navbar{
-  .navbar-brand{
+nav.top-bar{
+  .title-area{
     height: 50px !important;
     padding-top: 3px;
     img{
@@ -10,23 +10,24 @@ nav.navbar{
       opacity: 0.8;
     }
   }
-  background-color: white;
-  border: none;
-  font-weight: bold;
-}
-.navbar-nav{
-  ul{
-    list-style: none;
-    li{
-      margin-bottom: 10px;
-    }
+  ul.right{
     li.current{
       color: black;
       font-size: 16px;
     }
     a{
-      font-size: 15px;
+      font-size: rem-calc(13);
+      font-weight: bold;
     }
+  }
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+ul.off-canvas-list li a{
+  border: none !important;
+  &:hover{
+    background-color: white !important;
   }
 }
 .icons-nav{

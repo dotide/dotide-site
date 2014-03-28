@@ -26,11 +26,13 @@
   = yield_content :head
 
 %body
-  = partial "nav.cn"
-  / Main page container
-  = yield
-  / Footer
-  = partial "footer.cn"
+  .off-canvas-wrap
+    .inner-wrap
+      = partial "nav.cn"
+      / Main page container
+      = yield
+      / Footer
+      = partial "footer.cn"
   /[if lt IE 9]
     #ie-warning-overlay
       #ie-warning
