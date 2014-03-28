@@ -23,7 +23,7 @@
     /   %a.reverse{href: "/locale?lang=en"}= 'English'
 %a.exit-off-canvas
 .row
-  %nav.top-bar.hide-for-small{:'data-topbar' => true}
+  %nav.top-bar.hide-for-small.large-12.columns{:'data-topbar' => true}
     %ul.title-area
       %li.name
         %a.default{href: '/'}
@@ -46,15 +46,14 @@
         / %li
         /   %a{href: "/locale?lang=en"}= 'English'
 .row
-  .icons-nav
-    .container
-      %a.reverse{:href => "https://www.facebook.com/dotidehq"}
-        %span.fa.fa-facebook
-      %a.reverse{:href => "https://plus.google.com/113897022027241743220"}
-        %span.fa.fa-google-plus
-      %a.reverse{:href => "https://twitter.com/dotidehq"}
-        %span.fa.fa-twitter
-      %a.reverse{:href => "https://github.com/dotide"}
-        %span.fa.fa-github
-      %a.reverse{:href => "http://weibo.com/dotide"}
-        %span.fa.fa-weibo
+  .icons-nav.large-12.columns
+    %a.reverse{:href => "https://www.facebook.com/dotidehq"}
+      %span.fa.fa-facebook
+    %a.reverse{:href => "https://plus.google.com/113897022027241743220"}
+      %span.fa.fa-google-plus
+    %a.reverse{:href => "https://twitter.com/dotidehq"}
+      %span.fa.fa-twitter
+    %a.reverse{:href => "https://github.com/dotide"}
+      %span.fa.fa-github
+    %a.reverse{:href => "http://weibo.com/dotide"}
+      %span.fa.fa-weibo
