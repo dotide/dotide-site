@@ -594,16 +594,16 @@ $tabbar-menu-icon-hover: black;
 
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: none;
-// $orbit-nav-bg-hover: rgba(0,0,0,0.3);
-// $orbit-nav-arrow-color: #fff;
-// $orbit-nav-arrow-color-hover: #fff;
+$orbit-nav-bg-hover: $gray-bg;
+$orbit-nav-arrow-color: $gray-text;
+$orbit-nav-arrow-color-hover: black;
 
 // We use these to control the timer styles
-// $orbit-timer-bg: rgba(255,255,255,0.3);
-// $orbit-timer-show-progress-bar: true;
+$orbit-timer-bg: $gray-text;
+$orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
-// $orbit-bullet-nav-color: #ccc;
+// $orbit-bullet-nav-color: $gray-text;
 // $orbit-bullet-nav-color-active: #999;
 // $orbit-bullet-radius: rem-calc(9);
 
