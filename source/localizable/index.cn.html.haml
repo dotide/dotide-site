@@ -11,21 +11,21 @@ description: 'Dotide 是一家专注于提供时序数据存储和解决方案�
   .item-brand.hide-for-small
     .row
       .large-12.columns
-        %h3= "Dotide，专注时序数据技术服务"
-        %p= "专业存储和处理由传感器、测量表、监控器、服务器等产生的时序数据"
+        %h2= "Dotide，专注时序数据技术服务"
+        %h5.subheader= "专业存储和处理由传感器、测量表、监控器、服务器等产生的时序数据"
         %br
-        %a.button.radius.tiny.btn-primary{:href => "#features"}
+        %a.button.radius.btn-primary{:href => "#features"}
           = "了解更多"
-        %a.button.radius.tiny.btn-default{:href => '#'}
+        %a.button.radius.btn-default{:href => '/login'}
           = "免费试用"
   .item-brand-small.show-for-small
     .row
       .large-12.columns
         %h3= "Dotide，专注时序数据技术服务"
-        %p= "专业存储和处理由传感器、测量表、监控器、服务器等产生的时序数据"
-        %a.button.radius.tiny.btn-primary{:href => "#features"}
+        %h5.subheader= "专业存储和处理由传感器、测量表、监控器、服务器等产生的时序数据"
+        %a.button.radius.btn-primary{:href => "#features"}
           = "了解更多"
-        %a.button.radius.tiny.btn-default{:href => '#'}
+        %a.button.radius.btn-default{:href => '/login'}
           = "免费试用"
 .desc.wrap.gray-wrap
   .row
@@ -35,42 +35,21 @@ description: 'Dotide 是一家专注于提供时序数据存储和解决方案�
         %h5
           = "免费实验"
         %p
-          = "Dotide 提供100条数据流，100万个数据点的免费使用量，支持企业和开发者进行产品研发、接口调试、场景测试等使用。"
-        %p.readMore
-          %span.readMoreBtn.primary{:href => "#"}= "..."
-        %br
-        %p.details.hide
-          = "Dotide 是企业和开发者时序数据应用开发的免费实验平台。"
-          %br
-          %span.hideBtn.fa.fa-angle-up.text-right.primary
+          = "Dotide 免费提供100条数据流，100万个数据点的使用量，支持企业和开发者进行产品研发、接口调试、场景测试等工作。"
     .large-4.columns
       .item-desc
         %i.fa.fa-cloud
         %h5
-          = "弹性购买"
+          = "按需购买"
         %p
-          = "Dotide 支持企业和开发者进行弹性购买，根据数据需求量的变化随时调整购买容量，帮助企业和开发者最小化开发成本。"
-        %p.readMore
-          %span.readMoreBtn.primary{:href => "#"}= "..."
-        %br
-        %p.details.hide
-          = "并将购买时间单位调整为按月购买，确保灵活的购买弹性。"
-          %br
-          %span.hideBtn.fa.fa-angle-up.text-right.primary
+          = "Dotide 时序数据 PaaS 云平台，支持企业和开发者进行按需购买；Dotide 弹性扩展技术也方便客户根据数据量调整部署容量。"
     .large-4.columns
       .item-desc
         %i.fa.fa-users
         %h5
-          = "个性化服务"
+          = "个性化定制"
         %p
-          = "针对不同行业领域、不同应用场景的开发需求，Dotide 为企业和开发者提供个性化的技术支持和解决方案。"
-        %p.readMore
-          %span.readMoreBtn.primary{:href => "#"}= "..."
-        %br
-        %p.details.hide
-          = "实现开发需求与 Dotide 时序数据服务平台无缝对接的同时，亦可提供独立的时序数据存取系统的开发、搭建和长期运维服务。"
-          %br
-          %span.hideBtn.fa.fa-angle-up.text-right.primary
+          = "Dotide 时序数据私有云部署服务，可以根据客户的特殊需求，为企业和开发者定制个性化的部署和开发方案。"
 .features#features
   .features-title.row.text-center.wrap
     %h3= "时序数据开发中的四大难题"
@@ -117,20 +96,12 @@ description: 'Dotide 是一家专注于提供时序数据存储和解决方案�
     .large-6.columns.text-center
       %h4= "现在就开始免费体验 Dotide 时序数据服务"
     .large-3.columns.details-btn.hide-for-small.text-center
-      %a.button.radius.tiny.btn-primary.btn-small{:href => "/product/"}= "了解详情"
+      %a.button.radius.btn-primary.btn-small{:href => "/product/"}= "了解详情"
     .large-5.columns.details-btn-small.show-for-small.text-center
-      %a.button.radius.tiny.btn-primary.btn-small{:href => "/product/"}= "了解详情"
+      %a.button.radius.btn-primary.btn-small{:href => "/product/"}= "了解详情"
 
 - content_for :javascripts do
   :javascript
     $(document).ready(function() {
       $('nav.top-bar li.nav-home').addClass('current');
-      $('.readMore').click(function(){
-        $('.readMore').hide();
-        $('.details').show();
-        });
-      $('.hideBtn').click(function(){
-        $('.details').hide();
-        $('.readMore').show();
-      });
     });
