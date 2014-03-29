@@ -8,4 +8,3 @@ gem 'middleman-livereload'
 gem 'middleman-imageoptim'
 
 gem 'font-awesome-sass'
-gem 'bootstrap-sass', '~> 3.1.1'
