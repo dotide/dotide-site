@@ -15,7 +15,7 @@ nav.top-bar{
       color: black;
     }
     a{
-      font-size: rem-calc(13);
+      font-size: rem-calc(16);
       font-weight: bolder !important;
       padding-right: 0 !important;
     }
@@ -28,15 +28,5 @@ ul.off-canvas-list li a{
   border: none !important;
   &:hover{
     background-color: white !important;
-  }
-}
-.icons-nav{
-  padding-bottom: 10px;
-  a.reverse{
-    color: $gray-border;
-  }
-  span{
-    font-size: 18px;
-    padding-right: 8px;
   }
 }
