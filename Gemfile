@@ -5,6 +5,5 @@ source 'http://ruby.taobao.org/'
 
 gem 'middleman', '~>3.2.0'
 gem 'middleman-livereload'
-gem 'middleman-imageoptim'
 
 gem 'font-awesome-sass'
