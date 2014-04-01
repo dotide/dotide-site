@@ -1,0 +1,29 @@
+body{
+  .button{
+    border: solid 2px $primary-hover;
+    padding: 8px 25px 8px 25px;
+  }
+  .button.btn-black{
+    background-color: black;
+    color: white;
+  }
+  .button.btn-primary{
+    background-color: $primary;
+    border: solid 2px $primary;
+    &:hover{
+      background-color: $primary-hover;
+      border: solid 2px $primary-hover;
+    }
+  }
+  .button.btn-default{
+    color: $gray-text;
+    background: transparent;
+    &:hover{
+      border-color: $gray-dark-border;
+    }
+  }
+  .button.btn-black{
+    background-color: black;
+    color: white;
+  }
+}

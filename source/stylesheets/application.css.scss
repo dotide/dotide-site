@@ -1,13 +1,22 @@
-@import "variables";
-@import "framework";
-@import "font-awesome";
+//globals
+@import "./globals/variables";
+@import "./globals/responsive_helpers";
+@import "./globals/scaffold";
+@import "./globals/typography";
 
-@import "scaffold";
-@import "footer";
-@import "nav";
-@import "small";
-@import "typography";
-// pages
-@import "index";
-@import "about";
-@import "product";
+//components
+@import "./components/button";
+@import "./components/form";
+
+//plugins
+@import "font-awesome";
+@import "./plugins/framework";
+
+//sections
+@import "./sections/about";
+@import "./sections/index";
+@import "./sections/product";
+
+//shared
+@import "./shared/footer";
+@import "./shared/nav";

@@ -1,0 +1,25 @@
+body{
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  img{
+    width: 100%;
+  }
+  a, .primary{
+    color: $primary;
+    &:hover{
+      color: $primary-hover;
+      text-decoration: none;
+    }
+  }
+  a.normal{
+    color: $gray-text;
+    &:hover{
+      color: black;
+    }
+  }
+  a.reverse, span.reverse, li.reverse{
+    color: $primary-hover;
+    &:hover{
+      color: $primary;
+    }
+  }
+}
