@@ -1,7 +1,9 @@
-nav.navbar{
-  .navbar-brand{
+nav.top-bar{
+  .title-area{
     height: 50px !important;
-    padding-top: 3px;
+    li{
+      padding-top: 10px;
+    }
     img{
       height: 35px;
       width: auto;
@@ -10,19 +12,24 @@ nav.navbar{
       opacity: 0.8;
     }
   }
+  ul.right{
+    li.current a{
+      color: black;
+    }
+    a{
+      font-size: rem-calc(15);
+      font-weight: bolder !important;
+      padding-right: 0 !important;
+    }
+  }
   background-color: white;
   border: none;
   font-weight: bold;
 }
-.navbar-nav{
-  ul{
-    list-style: none;
-    li{
-      margin-bottom: 10px;
-    }
-    a{
-      font-size: 15px;
-    }
+ul.off-canvas-list li a{
+  border: none !important;
+  &:hover{
+    background-color: white !important;
   }
 }
 .icons-nav{

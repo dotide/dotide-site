@@ -1,0 +1,31 @@
+.slides{
+  background-color: $gray-bg;
+  .large-5{
+    img{
+      width: 50%;
+      display: inline;
+    }
+  }
+}
+.priceTable{
+  .pricing-table{
+    .price{
+      border-bottom: solid 1px $gray-border;
+    }
+    .cta-button a{
+      padding-bottom: 10px;
+      font-size: rem-calc(12);
+      i{
+        padding-left: 10px;
+      }
+    }
+    &.spec{
+      margin-top: -10px;
+      .title{
+        padding-bottom: 25px;
+        color: white;
+        background-color: $primary;
+      }
+    }
+  }
+}

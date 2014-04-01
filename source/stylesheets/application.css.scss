@@ -1,12 +1,13 @@
 @import "variables";
-@import "bootstrap";
+@import "framework";
 @import "font-awesome";
 
 @import "scaffold";
 @import "footer";
 @import "nav";
 @import "small";
+@import "typography";
 // pages
 @import "index";
 @import "about";
-@import "price";
+@import "product";

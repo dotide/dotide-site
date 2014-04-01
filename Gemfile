@@ -4,7 +4,6 @@
 source 'http://ruby.taobao.org/'
 
 gem 'middleman', '~>3.2.0'
-gem 'middleman-deploy'
 gem 'middleman-livereload'
 gem 'middleman-imageoptim'
 

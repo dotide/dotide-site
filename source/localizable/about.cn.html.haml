@@ -1,0 +1,76 @@
+---
+layout: cn
+title: 关于我们 - Dotide - 时序数据服务平台
+---
+
+.titleBox.wrap
+  .row
+    .large-9.columns
+      %h3= "关于我们"
+      %p= "Dotide 是一个极客创业团队，我们专注于解决时序数据的存储和分析问题。在这个云计算和物联网的时代，将有大量的传感器、测量表、监控器、服务器在持续运行，并将产生海量的时序数据。通过对时序数据的智能化分析，物联网和云计算才能够真正掌握设备、身体、房屋、汽车、轮船等一切移动和不移动设施的实时状况，并根据历史轨迹的分析，预测将来的趋势。因此，Dotide 的使命是让时序数据运营更简单，从而让人们真正进入智能物联网的时代。"
+    .large-3.columns
+      %a.button.radius.btn-default.pull-right{:href => "mailto:support@dotide.com"}= "联系我们"
+.wrap.row
+  .office.large-12.columns
+    %h3
+      = '我们在这里'
+      %small
+        %a.reverse{href: 'http://www.crabxlab.com'}= '南京螃蟹实验室'
+    %ul.large-block-grid-4.small-block-grid-2.medium-block-grid-4
+      %li
+        = image_tag('office-1.jpg')
+        %h6= '创新的工作环境'
+      %li
+        = image_tag('office-2.jpg')
+        %h6= '丰富的小零食'
+      %li
+        = image_tag('office-3.jpg')
+        %h6= '健康的生活'
+      %li
+        = image_tag('office-4.jpg')
+        %h6= '休闲和娱乐'
+      %li
+        = image_tag('office-5.jpg')
+        %h6= '方便的会议讨论'
+      %li
+        = image_tag('office-6.jpg')
+        %h6= '创业文化'
+      %li
+        = image_tag('office-7.jpg')
+        %h6= '开放的工作室1'
+      %li
+        = image_tag('office-8.jpg')
+        %h6= '开放的工作室2'
+  .office.large-12.columns
+    %hr/
+    %h3= "成员"
+    %ul.large-block-grid-4.small-block-grid-2.medium-block-grid-4
+      %li
+        %a{href: 'https://github.com/yandy'}
+          = image_tag("member-mic.jpg", alt: '@yandy', title: '@yandy')
+          %h6= '丁彦 (CEO)'
+      %li
+        %a{href: 'https://github.com/wdholmes'}
+          = image_tag("member-wd.jpg", alt: '@wdholmes', title: '@wdholmes')
+          %h6= '王迪 (CTO)'
+      %li
+        = image_tag("member-miles.jpg", alt: '@miles', title: '@miles')
+        %h6= '麦熙 (COO)'
+      %li
+        %a{href: 'https://github.com/wendycan'}
+          = image_tag("member-wx.png", alt: '@wendycan', title: '@wendycan')
+          %h6= '王欣 (Front-End Engineer)'
+.wrap.black-wrap.banner
+  .row
+    .large-8.columns.text-center
+      %h4= "我们需要优秀的 Web 工程师(前端、后端、全栈)加入我们！"
+    .large-4.columns.details-btn.hide-for-small.text-center
+      %a.button.radius.btn-primary.btn-small{href: 'mailto:jobs@dotide.com'}
+        = '联系我们'
+    .large-4.columns.details-btn-small.show-for-small.text-center
+      %a.button.radius.tiny.btn-primary.btn-small{:href => 'mailto:jobs@dotide.com'}
+        = '联系我们'
+
+- content_for :javascripts do
+  :javascript
+    $('nav.top-bar li.nav-about').addClass('current');

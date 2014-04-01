@@ -1,65 +1,16 @@
-// @media screen and (max-width:750){
-//   .titleBox{
-//     background-size: 200%;
-//   }
-// }
 .titleBox{
-  background-image: image-url('bckgr.jpg');
-  background-repeat: no-repeat;
-  background-size: 250%;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  background: image-url('bckgr.jpg') no-repeat;
+  background-size: 280%;
   .btn{
     margin-top: 30px;
   }
 }
-.whiteBox{
-  padding-top: 10px;
-  padding-bottom: 15px;
-  i{
-    font-size: 25px;
-  }
-  h5{
-    padding: 0 10px 10px 10px;
+.office{
+  h6{
+    text-align: center;
     color: $gray-text;
   }
-  .homeSign{
-    padding-top: 10px;
+  small{
+    font-size: rem-calc(13);
   }
-  .nav-tabs{
-    border: none !important;
-    li.active h5{
-      border-bottom: solid 2px $primary;
-    }
-    a{
-      padding: 0;
-      border: none !important;
-      &:hover{
-        color: black;
-        background: white;
-      }
-    }
-  }
-  .tab-content{
-    margin-top: 15px;
-    .office{
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-  }
-}
-.contactBox{
-  padding-top: 56px;
-  padding-bottom: 56px;
-  p{
-    color: $gray-text;
-    margin-bottom: 3px;
-  }
-  .headerSmall i{
-    font-size: 22px;
-  }
-}
-#map{
-  width: 100%;
-  height: 400px;
 }

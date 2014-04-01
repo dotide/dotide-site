@@ -45,6 +45,10 @@ end
 # Reload the browser automatically whenever files change
 activate :livereload
 
+activate :i18n, langs: [:cn, :en]
+
+activate :directory_indexes
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -52,18 +56,16 @@ activate :livereload
 #   end
 # end
 
-# set :css_dir, 'stylesheets'
-
-# set :js_dir, 'javascripts'
-
-# set :images_dir, 'images'
+### Assets PATH
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 
 ###
 # Template
 ###
 
-set :haml, { ugly: true }
-
+set :haml, ugly: true
 
 # Build-specific configuration
 configure :build do
@@ -85,5 +87,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  set :http_prefix, 'https://dotide-cdn.b0.upaiyun.com/'
 end
