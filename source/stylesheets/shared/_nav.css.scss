@@ -1,6 +1,5 @@
 nav.top-bar{
   .title-area{
-    height: 50px !important;
     img{
       height: 35px;
       width: auto;
@@ -23,9 +22,6 @@ nav.top-bar{
       padding-right: 0 !important;
     }
   }
-  background-color: white;
-  border: none;
-  font-weight: bold;
 }
 ul.off-canvas-list li a{
   border: none !important;

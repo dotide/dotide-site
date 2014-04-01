@@ -9,18 +9,3 @@
     color: white;
   }
 }
-.orbit-container{
-  .orbit-prev, .orbit-next{
-    opacity: 0.7;
-  }
-  .orbit-timer{
-    span{
-      border-left-color: $gray-text;
-      border-right-color: $gray-text;
-    }
-    &.paused > span{
-      border-left-color: $gray-text;
-    }
-  }
-}
-

@@ -1,0 +1,9 @@
+.orbit-timer{
+  > span{
+    border-left-color: $orbit-timer-color !important;
+    border-right-color: $orbit-timer-color !important;
+  }
+  &.paused > span{
+    border-right: none !important;
+  }
+}
