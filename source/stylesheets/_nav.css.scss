@@ -1,15 +1,16 @@
 nav.top-bar{
   .title-area{
     height: 50px !important;
-    li{
-      padding-top: 10px;
-    }
     img{
       height: 35px;
       width: auto;
+      vertical-align: baseline;
     }
     &:hover{
       opacity: 0.8;
+    }
+    li a{
+      padding: 6px 0 0 0;
     }
   }
   ul.right{
@@ -17,7 +18,7 @@ nav.top-bar{
       color: black;
     }
     a{
-      font-size: rem-calc(15);
+      font-size: rem-calc(16);
       font-weight: bolder !important;
       padding-right: 0 !important;
     }
@@ -30,15 +31,5 @@ ul.off-canvas-list li a{
   border: none !important;
   &:hover{
     background-color: white !important;
-  }
-}
-.icons-nav{
-  padding-bottom: 10px;
-  a.reverse{
-    color: $gray-border;
-  }
-  span{
-    font-size: 18px;
-    padding-right: 8px;
   }
 }

@@ -1,35 +1,40 @@
 .brand{
   position: relative;
-  h3, p, a.btn-default{
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.8);
-  }
   .bg-slide{
     background: image-url('bg-slider1.jpg');
     text-align: center;
   }
+  h2, h3, h4, h5, h6, p, a.btn-default{
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h2{
+    font-size: rem-calc(33);
+  }
   .bg-slide img{
-    width: auto;
-    min-height: 200px;
+    width: 100%;
+    min-height: rem-calc(200);
   }
   .btn-primary{
-    margin-right: 20px;
+    margin-right: rem-calc(20);
+  }
+  .brand-button-group{
+    margin-top: rem-calc(50);
   }
   .item-brand{
     position: absolute;
-    top: 70px;
+    top: rem-calc(120);
     left: 0;
     right: 0;
     bottom: 0;
   }
   .item-brand-small{
     position: absolute;
-    top: 15px;
+    top: rem-calc(15);
     left: 0;
     right: 0;
     bottom: 0;
     .button{
-      padding: 5px;
+      padding: rem-calc(5);
     }
   }
 }
@@ -44,14 +49,14 @@
     }
     i{
       float: left;
-      font-size: 30px;
+      font-size: rem-calc(30);
     }
   }
   .details span{
     width: 100%;
   }
   .readMoreBtn{
-    font-size: 20px;
+    font-size: rem-calc(20);
   }
 }
 .features{
@@ -59,12 +64,16 @@
     padding-bottom: 0;
   }
   img{
-    width: 50%;
+    height: 220px;
+    width: auto;
+  }
+  p{
+    line-height: 2;
   }
 }
 .banner{
   .details-btn-small{
-    margin-top: 10px;
+    margin-top: rem-calc(10);
   }
   h4{
     color: white;
