@@ -1,7 +1,7 @@
 body .button{
   border: solid 2px $primary-hover;
   padding: 8px 25px 8px 25px;
-  &.button.btn-default{
+  &.btn-default{
     color: $gray-text;
     background: transparent;
     &:hover{
