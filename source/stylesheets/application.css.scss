@@ -1,23 +1,23 @@
 //globals
-@import "./globals/variables";
-@import "./globals/responsive_helpers";
-@import "./globals/scaffold";
-@import "./globals/typography";
+@import "globals/variables";
+@import "globals/responsive_helpers";
+@import "globals/scaffold";
+@import "globals/typography";
+@import "globals/framework";
 
 //components
-@import "./components/button";
-@import "./components/form";
-@import "./components/slides";
+@import "components/button";
+@import "components/form";
+@import "components/slides";
 
 //plugins
 @import "font-awesome";
-@import "./plugins/framework";
 
 //sections
-@import "./sections/about";
-@import "./sections/index";
-@import "./sections/product";
+@import "sections/about";
+@import "sections/index";
+@import "sections/product";
 
 //shared
-@import "./shared/footer";
-@import "./shared/nav";
+@import "shared/footer";
+@import "shared/nav";
