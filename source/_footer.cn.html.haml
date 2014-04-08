@@ -2,18 +2,20 @@
   .wrap.gray-wrap
     .row
       .large-4.columns.medium-6.small-only-text-center.large-push-8
-        %h4.headerFooter.light= "关于 Dotide"
-        %p.aboutUs
+        %h4= "关于 Dotide"
+        %p
           = "Dotide 是一家专注时序数据技术服务的极客创业企业，提供从数据存储、数据处理、数据建模到数据可视化的全流程时序数据服务。"
-          %a{href: 'https://dotide.com'}
+        %br
+        %p.footer-links
+          %a.reverse{href: "/"}= "© 2014 Dotide "
+          %a.reverse{href: "http://www.miibeian.gov.cn"}= "苏ICP备12071270号"
       .large-6.columns.medium-6.small-only-text-center.large-pull-4
-        %h4.headerFooter= "联系我们"
-        .contactFooter
-          %p= "江苏南京浦口区万寿路15号"
-          %p= "211800"
-          %br
-          %a.reverse{:href => "mailto:support@dotide.com"}
-            %p= "support@dotide.com"
+        %h4= "联系我们"
+        %p= "江苏南京浦口区万寿路15号"
+        %p= "211800"
+        %br
+        %a.reverse{:href => "mailto:support@dotide.com"}
+          %p= "support@dotide.com"
       .large-2.columns.medium-6.small-only-text-center.large-pull-4
         .qrcode
           = image_tag('wx-qrcode.jpg')

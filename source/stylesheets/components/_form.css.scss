@@ -1,0 +1,24 @@
+input.form-control, textarea.form-control{
+  border: solid 2px $gray-light-border;
+  &:focus{
+    border-color: red;
+  }
+}
+.has-feedback{
+  input{
+    padding-left: 45px;
+    width: 90%;
+  }
+  textarea.form-control{
+    text-indent: 30px;
+    width: 95%;
+    height: 138px;
+  }
+  .form-control-feedback{
+    position: absolute;
+    line-height: 34px;
+    left: 15px;
+    top: 0;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+.wrap{
+  padding-top: 56px;
+  padding-bottom: 56px;
+  &.gray-wrap{
+    background-color: $gray-bg;
+  }
+  &.black-wrap{
+    background-color: black;
+    color: white;
+  }
+}
