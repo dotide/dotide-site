@@ -77,9 +77,9 @@ description: Dotide 是一家时序数据云存储服务的极客创业企业，
           = "时序数据存储的目的是为了查询和分析。Dotide 需要提供一套简洁的 MapReduce 接口："
         %ul.no-bullet
           %li
-            = "基于时间的高效查询，且查询效率不会因为数据总量的增多而降低。"
+            = "对原始数据的聚合/downsample (提供 built-in 方法 & 允许执行自定义的方法 )"
           %li
-            = "数据点的增长几乎不会增加内存的消耗。即数据增长几乎只增加磁盘成本。"
+            = "对原始数据的统计和分析 (实时计算 & 后台计算)"
       .large-6.columns.large-pull-6.text-center
         = image_tag("problems-2.png")
   .row.wrap
