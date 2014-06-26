@@ -64,7 +64,7 @@ description: Dotide 是一家时序数据云存储服务的极客创业企业，
         %li
           = "基于时间的高效查询，且查询效率不会因为数据总量的增多而降低。"
         %li
-          = "数据点的增长几乎不会增加内存的消耗。即数据增长几乎只增加磁盘成本。"
+          = "在保证查询效率的基础上，实现低成本的数据存取。是数据的增长不会带来太多成本的增加。"
     .large-6.columns.text-center
       = image_tag("problems-1.png")
   .wrap.gray-wrap
@@ -74,10 +74,10 @@ description: Dotide 是一家时序数据云存储服务的极客创业企业，
         %h4.text-center
           = "简洁的 MapReduce 接口"
         %p
-          = "时序数据存储的目的是为了查询和分析。Dotide 需要提供一套简洁的 MapReduce 接口："
+          = "时序数据存储的目的是为了查询和分析。Dotide 提供一套简洁的 MapReduce 接口："
         %ul.no-bullet
           %li
-            = "对原始数据的聚合/downsample (提供 built-in 方法 & 允许执行自定义的方法 )"
+            = "对原始数据的聚合/downsample (提供 builtin 方法 & 允许执行自定义的方法 )"
           %li
             = "对原始数据的统计和分析 (实时计算 & 后台计算)"
       .large-6.columns.large-pull-6.text-center
@@ -88,7 +88,7 @@ description: Dotide 是一家时序数据云存储服务的极客创业企业，
       %h4.text-center
         = "横向扩展性"
       %p
-        = "需要具备良好的水平扩展性，通过简单的添加节点来实现计算性能的提升和存储空间的提升。整个系统具有较高的节点容错性。"
+        = "Dotide 具备良好的水平扩展性，使用 Dotide 云存储服务，可以根据使用量自动扩展。而对于私有云用户，也通过简单的添加节点来实现计算性能的提升和存储空间的提升。整个系统具有较高的节点容错性。"
     .large-6.columns.text-center
       = image_tag("problems-3.png")
   .wrap.gray-wrap
