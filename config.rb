@@ -82,5 +82,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  set :http_prefix, 'https://dotide-cdn.b0.upaiyun.com/'
+  set :http_prefix, 'https://dn-dotide-site.qbox.me/'
 end
